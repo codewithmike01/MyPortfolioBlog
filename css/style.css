@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main section.project .project-btn, main section.intro a {
+  padding: 15px;
+  border-radius: 25px;
+  color: #fff;
+}
+
+body {
+  position: relative;
+  font-size: 1.2rem;
+  background-color: #fff;
+  font-family: "Roboto Mono", monospace;
+}
+body header {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background: url(../images/profilePicture.jpg) no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  padding: 0 20px;
+  z-index: 1;
+}
+body header li {
+  list-style-type: none;
+}
+body header::before {
+  background: linear-gradient(54deg, rgba(74, 76, 179, 0.9) 34%, rgba(206, 156, 156, 0.9));
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  content: "";
+  z-index: -1;
+}
+body nav {
+  padding-top: 55px;
+}
+body nav .ham-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+body nav .ham-menu span {
+  border: 1px solid #fff;
+  height: 2px;
+  width: 15px;
+}
+body nav .hide {
+  display: none;
+}
+body .profile,
+body .profile-info {
+  color: #fff;
+}
+body .profile {
+  margin-top: 120px;
+  margin-bottom: 15px;
+}
+body .profile .name-job h1 {
+  font-size: 2.6em;
+  line-height: 50px;
+  font-weight: 700;
+}
+body .profile .name-job p {
+  font-weight: 600;
+  letter-spacing: 1.7px;
+  margin-top: 7px;
+  font-size: 0.9em;
+}
+body .profile-info {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+body .profile-info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+body .profile-info .description li {
+  opacity: 0.6;
+}
+body .profile-info .profile-answer li {
+  font-weight: 600;
+}
+body .profile-socials {
+  display: flex;
+  margin-top: 43px;
+  gap: 15px;
+}
+body .profile-socials img {
+  width: 33px;
+  height: 33px;
+}
+body a {
+  text-decoration: none;
+}
+
+main {
+  padding: 0 20px;
+}
+main h2,
+main h3,
+main h4 {
+  margin-top: 50px;
+  font-weight: 200;
+  font-size: 2.3em;
+  color: #555;
+}
+main h3 {
+  font-size: 1.2em;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+main h4 {
+  font-size: 0.9em;
+}
+main p {
+  margin-top: 40px;
+  color: #555;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 28px;
+}
+main section.intro {
+  position: relative;
+}
+main section.intro a {
+  background-color: #6d56c1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 7px;
+  max-width: 57%;
+  margin: 30px 0 65px 5px;
+  font-weight: 500;
+}
+main section.resume li {
+  list-style-type: none;
+}
+main section.resume li p {
+  margin-top: 0px;
+}
+main section.resume h3 {
+  margin-bottom: 55px;
+}
+main section.resume div.education .inner-list::before {
+  content: "";
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 25px;
+  border: 2px solid #6d56c1;
+  position: relative;
+  left: 0;
+}
+main section.resume div.education .inner-list::after {
+  content: "";
+  display: block;
+  height: 190px;
+  width: 2px;
+  border: 1px solid #6d56c1;
+  position: relative;
+  top: -6px;
+  left: 6px;
+}
+main section.resume div.education .list-vertical li {
+  margin-top: -12px;
+}
+main section.resume div.education div.education-details {
+  display: flex;
+  gap: 15px;
+}
+main section.resume div.education div.education-details .education-answer {
+  margin-top: -62px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+main section.resume div.education div.education-details .education-answer div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main section.resume div.education div.education-details .education-answer div .date {
+  font-weight: 300;
+  font-size: 0.7em;
+}
+main section.resume div.education div.education-details .education-answer li {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main section.resume div.education div.education-details .education-answer li h4 {
+  color: #6d56c1;
+  font-size: 1em;
+}
+main section.resume div.education div.education-details .education-answer li .degree {
+  font-weight: 500;
+  font-size: 1em;
+}
+main section.resume div.general-skill {
+  margin-bottom: 90px;
+}
+main section.resume div.general-skill h3 {
+  margin-bottom: -5px;
+}
+main section.resume div.general-skill .skills {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+main section.resume div.general-skill .skills .skill-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+main section.resume div.general-skill .skills .skill-progress {
+  height: 10px;
+  background-color: #d5d5d5;
+  border-radius: 5px;
+}
+main section.resume div.general-skill .skills .skill-progress .inner-indicator {
+  height: 10px;
+  background-color: #6d56c1;
+  border-radius: 5px;
+}
+main section.resume div.general-skill .skills .skill-progress .html {
+  width: 90%;
+}
+main section.resume div.general-skill .skills .skill-progress .css {
+  width: 80%;
+}
+main section.resume div.general-skill .skills .skill-progress .javascript {
+  width: 72%;
+}
+main section.resume div.general-skill .skills .skill-progress .bootstrap {
+  width: 75%;
+}
+main section.resume div.general-skill .skills .skill-progress .git {
+  width: 63%;
+}
+main section.resume div.general-skill .skills .skill-progress .photoshop {
+  width: 74%;
+}
+main section.project .project-heading {
+  margin-bottom: 45px;
+}
+main section.project .card-project {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  box-shadow: 20px 44px 70px -51px rgba(0, 0, 0, 0.36);
+}
+main section.project .card-project h2 {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+main section.project .card-project h4 {
+  font-weight: bolder;
+}
+main section.project .card-project img {
+  width: 100%;
+  object-fit: cover;
+}
+main section.project .card-project .project-details {
+  padding: 0 0.7em;
+}
+main section.project .card-project ul {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+main section.project .card-project ul li {
+  list-style-type: none;
+  color: #555;
+  font-weight: 300;
+  border-width: 1px;
+  background-color: #fff;
+  padding: 10px 15px;
+  box-shadow: 1px 8px 21px -1px rgba(0, 0, 0, 0.34);
+}
+main section.project .project-btn {
+  background-color: #6d56c1;
+  font-size: 0.9em;
+  border: none;
+  max-width: 68%;
+  font-weight: 500;
+}
+
+section.testimony {
+  margin-top: 120px;
+  padding: 25px 30px;
+  padding-bottom: 70px;
+  height: 100%;
+  background-color: #6d56c1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  z-index: 1;
+}
+section.testimony .circle {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: -55px;
+  background-color: #fff;
+  transform: translateX(70%);
+  border-radius: 50%;
+}
+section.testimony .circle .quote {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  color: #6d56c1;
+  font-size: 4em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+section.testimony .testimonyBg {
+  background: linear-gradient(54deg, rgba(74, 76, 179, 0.9) 34%, rgba(206, 156, 156, 0.9));
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  z-index: -1;
+}
+section.testimony h3 {
+  font-size: 1.3em;
+  letter-spacing: 0px;
+  color: #fff;
+}
+section.testimony h4 {
+  color: rgba(235, 231, 231, 0.8);
+}
+section.testimony p {
+  color: #fff;
+  font-size: 1.1em;
+}
+section.testimony hr {
+  margin-top: 20px;
+  border-color: rgba(206, 156, 156, 0.7);
+}
+section.testimony ul {
+  display: flex;
+  align-items: center;
+  margin-left: -20px;
+  width: calc(100% + 50px);
+  gap: 7px;
+  margin-left: -30px;
+}
+section.testimony ul li {
+  list-style-type: none;
+}
+section.testimony ul li p {
+  width: calc(100% + 35px);
+  margin-left: -5px;
+}
+
+/*# sourceMappingURL=style.css.map */
