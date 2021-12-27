@@ -6,7 +6,8 @@
   padding: 0;
 }
 
-main section.project .project-btn, main section.intro a {
+footer form button, main section.project .project-btn,
+main section.post .project-btn, main section.intro a {
   padding: 15px;
   border-radius: 25px;
   color: #fff;
@@ -18,6 +19,9 @@ body {
   background-color: #fff;
   font-family: "Roboto Mono", monospace;
 }
+body p {
+  line-height: 32px;
+}
 body header {
   position: relative;
   width: 100%;
@@ -25,7 +29,7 @@ body header {
   background: url(../images/profilePicture.jpg) no-repeat;
   background-size: cover;
   background-position-x: center;
-  padding: 0 20px;
+  padding: 0 12px;
   z-index: 1;
 }
 body header li {
@@ -79,7 +83,7 @@ body .profile .name-job p {
 body .profile-info {
   margin-top: 30px;
   display: flex;
-  gap: 10px;
+  gap: 5px;
 }
 body .profile-info ul {
   display: flex;
@@ -106,7 +110,8 @@ body a {
 }
 
 main {
-  padding: 0 20px;
+  padding: 0 12px;
+  padding-bottom: 50px;
 }
 main h2,
 main h3,
@@ -129,7 +134,7 @@ main p {
   color: #555;
   font-family: "Roboto", sans-serif;
   font-size: 1em;
-  line-height: 28px;
+  line-height: 32px;
 }
 main section.intro {
   position: relative;
@@ -181,10 +186,10 @@ main section.resume div.education div.education-details {
   gap: 15px;
 }
 main section.resume div.education div.education-details .education-answer {
-  margin-top: -62px;
+  margin-top: -66px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 15px;
 }
 main section.resume div.education div.education-details .education-answer div {
   display: flex;
@@ -252,36 +257,44 @@ main section.resume div.general-skill .skills .skill-progress .git {
 main section.resume div.general-skill .skills .skill-progress .photoshop {
   width: 74%;
 }
-main section.project .project-heading {
+main section.project .project-heading,
+main section.post .project-heading {
   margin-bottom: 45px;
 }
-main section.project .card-project {
+main section.project .card-project,
+main section.post .card-project {
   padding-bottom: 40px;
   margin-bottom: 40px;
   box-shadow: 20px 44px 70px -51px rgba(0, 0, 0, 0.36);
 }
-main section.project .card-project h2 {
+main section.project .card-project h2,
+main section.post .card-project h2 {
   font-size: 1.2em;
   font-weight: 500;
 }
-main section.project .card-project h4 {
+main section.project .card-project h4,
+main section.post .card-project h4 {
   font-weight: bolder;
 }
-main section.project .card-project img {
+main section.project .card-project img,
+main section.post .card-project img {
   width: 100%;
   object-fit: cover;
 }
-main section.project .card-project .project-details {
+main section.project .card-project .project-details,
+main section.post .card-project .project-details {
   padding: 0 0.7em;
 }
-main section.project .card-project ul {
+main section.project .card-project ul,
+main section.post .card-project ul {
   margin-top: 25px;
   margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
-main section.project .card-project ul li {
+main section.project .card-project ul li,
+main section.post .card-project ul li {
   list-style-type: none;
   color: #555;
   font-weight: 300;
@@ -290,15 +303,15 @@ main section.project .card-project ul li {
   padding: 10px 15px;
   box-shadow: 1px 8px 21px -1px rgba(0, 0, 0, 0.34);
 }
-main section.project .project-btn {
+main section.project .project-btn,
+main section.post .project-btn {
   background-color: #6d56c1;
   font-size: 0.9em;
   border: none;
   max-width: 68%;
   font-weight: 500;
 }
-
-section.testimony {
+main section.testimony {
   margin-top: 120px;
   padding: 25px 30px;
   padding-bottom: 70px;
@@ -310,7 +323,7 @@ section.testimony {
   position: relative;
   z-index: 1;
 }
-section.testimony .circle {
+main section.testimony .circle {
   position: absolute;
   height: 100px;
   width: 100px;
@@ -319,7 +332,7 @@ section.testimony .circle {
   transform: translateX(70%);
   border-radius: 50%;
 }
-section.testimony .circle .quote {
+main section.testimony .circle .quote {
   position: relative;
   top: 30px;
   left: 30px;
@@ -327,7 +340,7 @@ section.testimony .circle .quote {
   font-size: 4em;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-section.testimony .testimonyBg {
+main section.testimony .testimonyBg {
   background: linear-gradient(54deg, rgba(74, 76, 179, 0.9) 34%, rgba(206, 156, 156, 0.9));
   height: 100%;
   position: absolute;
@@ -337,23 +350,23 @@ section.testimony .testimonyBg {
   content: "";
   z-index: -1;
 }
-section.testimony h3 {
+main section.testimony h3 {
   font-size: 1.3em;
   letter-spacing: 0px;
   color: #fff;
 }
-section.testimony h4 {
+main section.testimony h4 {
   color: rgba(235, 231, 231, 0.8);
 }
-section.testimony p {
+main section.testimony p {
   color: #fff;
   font-size: 1.1em;
 }
-section.testimony hr {
+main section.testimony hr {
   margin-top: 20px;
   border-color: rgba(206, 156, 156, 0.7);
 }
-section.testimony ul {
+main section.testimony ul {
   display: flex;
   align-items: center;
   margin-left: -20px;
@@ -361,12 +374,121 @@ section.testimony ul {
   gap: 7px;
   margin-left: -30px;
 }
-section.testimony ul li {
+main section.testimony ul li {
   list-style-type: none;
 }
-section.testimony ul li p {
+main section.testimony ul li p {
   width: calc(100% + 35px);
   margin-left: -5px;
+}
+main section.testimony ul .angle-right {
+  margin-left: 7px;
+  margin-right: -10px;
+}
+main section.testimony ul .angle-left {
+  margin-left: -7px;
+}
+main section.post {
+  margin-top: 90px;
+}
+main section.post .image-post {
+  margin-bottom: 25px;
+}
+main section.post img {
+  width: 100%;
+  object-fit: cover;
+}
+main section.post .post-heading {
+  margin-bottom: 70px;
+}
+main section.post .card-post {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  box-shadow: 20px 44px 70px -51px rgba(0, 0, 0, 0.36);
+}
+main section.post .post-details {
+  padding: 0 0.8em;
+}
+main section.post .post-details .date {
+  margin-top: 0;
+  font-size: 0.8em;
+  margin-bottom: 15px;
+}
+main section.post .post-details h2 {
+  font-size: 1em;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+main section.post .post-details .post-description {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+footer {
+  padding: 50px 12px 20px 12px;
+  color: #fff;
+  background-image: url(.././images/footerbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+footer .innerfoot {
+  background: linear-gradient(54deg, rgba(74, 76, 179, 0.9) 34%, rgba(206, 156, 156, 0.9));
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  z-index: -1;
+  opacity: 0.9;
+}
+footer h2 {
+  text-align: center;
+  margin-bottom: 35px;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+footer form ::placeholder {
+  color: #fff;
+  font-size: 0.8em;
+}
+footer form input[type=text],
+footer form input[type=email] {
+  height: 50px;
+}
+footer form input[type=text],
+footer form input[type=email],
+footer form textarea {
+  background-color: inherit;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  outline: none;
+  padding-left: 10px;
+  color: #fff;
+  font-size: 1.1em;
+}
+footer form textarea {
+  padding-top: 15px;
+}
+footer form button {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #6d56c1;
+  border: none;
+  font-weight: 600;
+}
+footer .copyrights {
+  text-align: center;
+  opacity: 0.5;
+  font-size: 0.8em;
 }
 
 /*# sourceMappingURL=style.css.map */

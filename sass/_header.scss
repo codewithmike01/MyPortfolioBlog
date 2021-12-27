@@ -1,0 +1,108 @@
+body {
+  position: relative;
+  font-size: 1.2rem;
+  background-color: #fff;
+  font-family: $default-font;
+
+  p {
+    line-height: 32px;
+  }
+
+  header {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: url(../images/profilePicture.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    padding: 0 $padding-content-x;
+    z-index: 1;
+    li {
+      list-style-type: none;
+    }
+  }
+
+  header::before {
+    background: $linear-background;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    content: '';
+    z-index: -1;
+  }
+
+  nav {
+    padding-top: 55px;
+    .ham-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .ham-menu span {
+      border: 1px solid #fff;
+      height: 2px;
+      width: 15px;
+    }
+    .hide {
+      display: none;
+    }
+  }
+
+  .profile,
+  .profile-info {
+    color: #fff;
+  }
+
+  .profile {
+    margin-top: 120px;
+    margin-bottom: 15px;
+
+    .name-job h1 {
+      font-size: 2.6em;
+      line-height: 50px;
+      font-weight: 700;
+    }
+    .name-job p {
+      font-weight: 600;
+      letter-spacing: 1.7px;
+      margin-top: 7px;
+      font-size: 0.9em;
+    }
+  }
+
+  .profile-info {
+    margin-top: 30px;
+    display: flex;
+    gap: 5px;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .description li {
+      opacity: 0.6;
+    }
+
+    .profile-answer li {
+      font-weight: 600;
+    }
+  }
+
+  .profile-socials {
+    display: flex;
+    margin-top: 43px;
+    gap: 15px;
+
+    img {
+      width: 33px;
+      height: 33px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

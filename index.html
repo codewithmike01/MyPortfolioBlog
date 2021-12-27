@@ -13,6 +13,7 @@
     <title>Mike's Portfolio/Blog</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header>
       <div class="bg"></div>
       <nav>
@@ -75,12 +76,12 @@
         <h2>Hi_</h2>
         <div class="intro-details">
           <p class="intro">
-            I am Junior Web developer able to build a Web presence from the
-            ground up - from concept, navigation, layout and programming to UX
-            and SEO. Skilled at writing well-designed, testable and efficient
-            code using current best practices in Web development. Fast learner,
-            hard worker and team player who is proficient in an array of
-            scripting languages and multimedia Web tools.
+            I am a Web developer able to build a Web presence from the ground up
+            - from concept, navigation, layout and programming to UX and SEO.
+            Skilled at writing well-designed, testable and efficient code using
+            current best practices in Web development. Fast learner, hard worker
+            and team player who is proficient in an array of scripting languages
+            and multimedia Web tools.
           </p>
           <a href="#" target="_blank">
             <img src="./images/downloadIcon.svg" alt="" /> DOWNLOAD CV</a
@@ -230,7 +231,7 @@
           <h4>Project: Landing Page for dropshipping</h4>
           <hr />
           <ul>
-            <li class="angle">
+            <li class="angle-left">
               <img
                 src="./images/outline_keyboard_arrow_left_white_24dp.png"
                 alt="Left arrow"
@@ -245,7 +246,7 @@
                 cum blanditiis magni odit delectus natus corporis!
               </p>
             </li>
-            <li class="angle">
+            <li class="angle-right">
               <img
                 src="./images/outline_keyboard_arrow_right_white_24dp.png"
                 alt="Right arrow"
@@ -253,7 +254,55 @@
             </li>
           </ul>
         </section>
+        <hr />
+      </section>
+
+      <!-- Lastest Post -->
+      <section class="post">
+        <div class="post-heading">
+          <h2>Latest Post_</h2>
+        </div>
+
+        <div class="card-post">
+          <div class="image-post">
+            <img src="./images/csspreprocessor.jpg" alt="DashBoard" />
+          </div>
+          <div class="post-details">
+            <p class="date">JUNE 22,2021</p>
+            <h2>HOW TO USE THE POWER OF CSS PREPROCESSOR</h2>
+            <p class="post-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              quod voluptatem cupiditate provident ullam tempora eos tempore!
+              Cumque nobis iusto pariatur aspernatur similique enim saepe
+              ratione, labore repellendus incidunt dolor?
+            </p>
+
+            <button type="button" class="project-btn">Read Post</button>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer>
+      <div class="innerfoot"></div>
+
+      <h2>Get in touch_</h2>
+
+      <form action="#">
+        <input type="text" name="userName" placeholder="Your name" required />
+        <input type="email" name="userEmai" placeholder="Your email" required />
+        <textarea
+          name="msg"
+          id="text-msg"
+          cols="30"
+          rows="10"
+          placeholder="Type the message here"
+          maxlength="500"
+          required
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div class="copyrights">&copy; 2021 Free to use</div>
+    </footer>
   </body>
 </html>

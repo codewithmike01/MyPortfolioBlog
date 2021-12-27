@@ -1,0 +1,356 @@
+main {
+  padding: 0 $padding-content-x;
+  padding-bottom: 50px;
+
+  h2,
+  h3,
+  h4 {
+    margin-top: 50px;
+    font-weight: 200;
+    font-size: 2.3em;
+    color: $primary-text-color;
+  }
+  h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 4px;
+  }
+  h4 {
+    font-size: 0.9em;
+  }
+
+  p {
+    margin-top: 40px;
+    color: $primary-text-color;
+    font-family: $paragraph-font;
+    font-size: 1em;
+    line-height: 32px;
+  }
+
+  section.intro {
+    position: relative;
+    a {
+      @extend %btn;
+      background-color: $primary-color;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      gap: 7px;
+      max-width: 57%;
+      margin: 30px 0 65px 5px;
+      font-weight: 500;
+    }
+  }
+
+  section.resume {
+    li {
+      list-style-type: none;
+      p {
+        margin-top: 0px;
+      }
+    }
+
+    h3 {
+      margin-bottom: 55px;
+    }
+
+    div.education {
+      .inner-list::before {
+        content: '';
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+        border-radius: 25px;
+        border: 2px solid $primary-color;
+        position: relative;
+        left: 0;
+      }
+
+      .inner-list::after {
+        content: '';
+        display: block;
+        height: 190px;
+        width: 2px;
+        border: 1px solid $primary-color;
+        position: relative;
+        top: -6px;
+        left: 6px;
+      }
+
+      .list-vertical li {
+        margin-top: -12px;
+      }
+
+      div.education-details {
+        display: flex;
+        gap: 15px;
+
+        .education-answer {
+          margin-top: -66px;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+          div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .date {
+              font-weight: 300;
+              font-size: 0.7em;
+            }
+          }
+          li {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h4 {
+              color: $primary-color;
+              font-size: 1em;
+            }
+
+            .degree {
+              font-weight: 500;
+              font-size: 1em;
+            }
+          }
+        }
+      }
+    }
+    div.general-skill {
+      margin-bottom: 90px;
+      h3 {
+        margin-bottom: -5px;
+      }
+
+      .skills {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        .skill-name {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 12px;
+        }
+
+        .skill-progress {
+          height: 10px;
+          background-color: lighten(#555, 50%);
+          border-radius: 5px;
+
+          .inner-indicator {
+            height: 10px;
+            background-color: $primary-color;
+            border-radius: 5px;
+          }
+
+          .html {
+            width: 90%;
+          }
+
+          .css {
+            width: 80%;
+          }
+
+          .javascript {
+            width: 72%;
+          }
+          .bootstrap {
+            width: 75%;
+          }
+
+          .git {
+            width: 63%;
+          }
+
+          .photoshop {
+            width: 74%;
+          }
+        }
+      }
+    }
+  }
+
+  section.project,
+  section.post {
+    .project-heading {
+      margin-bottom: 45px;
+    }
+
+    .card-project {
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+      box-shadow: 20px 44px 70px -51px rgba(0, 0, 0, 0.36);
+      h2 {
+        font-size: 1.2em;
+        font-weight: 500;
+      }
+      h4 {
+        font-weight: bolder;
+      }
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .project-details {
+        padding: 0 0.7em;
+      }
+
+      ul {
+        margin-top: 25px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        li {
+          list-style-type: none;
+          color: $primary-text-color;
+          font-weight: 300;
+          border-width: 1px;
+          background-color: #fff;
+          padding: 10px 15px;
+          box-shadow: 1px 8px 21px -1px rgba(0, 0, 0, 0.34);
+        }
+      }
+    }
+    .project-btn {
+      @extend %btn;
+      background-color: $primary-color;
+      font-size: 0.9em;
+      border: none;
+      max-width: 68%;
+      font-weight: 500;
+    }
+  }
+
+  section.testimony {
+    margin-top: 120px;
+    padding: 25px 30px;
+    padding-bottom: 70px;
+    height: 100%;
+    background-color: $primary-color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    z-index: 1;
+    .circle {
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      top: -55px;
+      background-color: #fff;
+      transform: translateX(70%);
+      border-radius: 50%;
+
+      .quote {
+        position: relative;
+        top: 30px;
+        left: 30px;
+        color: $primary-color;
+        font-size: 4em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+    }
+    .testimonyBg {
+      background: $linear-background;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      content: '';
+      z-index: -1;
+    }
+
+    h3 {
+      font-size: 1.3em;
+      letter-spacing: 0px;
+      color: #fff;
+    }
+    h4 {
+      color: rgba(235, 231, 231, 0.8);
+    }
+    p {
+      color: #fff;
+      font-size: 1.1em;
+    }
+
+    hr {
+      margin-top: 20px;
+      border-color: hsla(0, 34%, 71%, 0.7);
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      margin-left: -20px;
+      width: calc(100% + 50px);
+      gap: 7px;
+      margin-left: -30px;
+
+      li {
+        list-style-type: none;
+
+        p {
+          width: calc(100% + 35px);
+          margin-left: -5px;
+        }
+      }
+      .angle-right {
+        margin-left: 7px;
+        margin-right: -10px;
+      }
+
+      .angle-left {
+        margin-left: -7px;
+      }
+    }
+  }
+
+  section.post {
+    margin-top: 90px;
+    .image-post {
+      margin-bottom: 25px;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+    .post-heading {
+      margin-bottom: 70px;
+    }
+
+    .card-post {
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+      box-shadow: 20px 44px 70px -51px rgba(0, 0, 0, 0.36);
+    }
+
+    .post-details {
+      padding: 0 0.8em;
+
+      .date {
+        margin-top: 0;
+        font-size: 0.8em;
+        margin-bottom: 15px;
+      }
+
+      h2 {
+        font-size: 1em;
+        line-height: 24px;
+        margin-top: 0;
+        margin-bottom: 30px;
+      }
+      .post-description {
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

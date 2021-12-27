@@ -1,0 +1,24 @@
+$primary-text-color: #555;
+$secondary-color: #4a4a4a;
+$primary-color: #6d56c1;
+$font-change: #212529;
+$padding-content-x: 12px;
+$default-font: 'Roboto Mono', monospace;
+$paragraph-font: 'Roboto', sans-serif;
+$linear-background: linear-gradient(
+  54deg,
+  rgba(74, 76, 179, 0.9) 34%,
+  hsla(0, 34%, 71%, 0.9)
+);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+%btn {
+  padding: 15px;
+  border-radius: 25px;
+  color: #fff;
+}
