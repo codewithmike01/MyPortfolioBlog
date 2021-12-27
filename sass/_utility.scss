@@ -17,8 +17,14 @@ $linear-background: linear-gradient(
   padding: 0;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 %btn {
-  padding: 15px;
+  padding: 18px;
   border-radius: 25px;
   color: #fff;
+  width: 50%;
 }

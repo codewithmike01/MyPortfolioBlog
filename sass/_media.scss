@@ -1,0 +1,163 @@
+// MEADIA QUERY
+
+/* MOBILE*/
+@media (min-width: 447px) {
+  main,
+  .small-footer,
+  .header-inner-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  div.education {
+    margin-bottom: 70px;
+  }
+
+  .circle {
+    transform: translateX(150%);
+  }
+}
+
+/* MOBILE */
+@media (min-width: 500px) {
+  .header-inner-container {
+    max-width: 570px;
+  }
+
+  .education-answer li:nth-child(even) {
+    margin-top: 1.3375em;
+  }
+
+  button {
+    max-width: 210px;
+  }
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  main,
+  .small-footer,
+  .header-inner-container,
+  .post-inner-container,
+  .test-container {
+    max-width: 799px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.7em;
+
+    .skill-details {
+      width: 46%;
+    }
+  }
+
+  .card-project {
+    display: flex;
+    gap: 20px;
+
+    img {
+      width: 100%;
+      height: calc(100%);
+      object-fit: cover;
+    }
+  }
+
+  .flex-post {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    .card-post {
+      width: 33.333%;
+    }
+
+    .post-btn {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+
+  footer {
+    form {
+      max-width: 645px;
+      margin: 0 auto;
+      .form-btn {
+        max-width: 290px;
+      }
+    }
+  }
+}
+
+/* TABLET */
+
+@media (min-width: 989px) {
+  main,
+  .small-footer,
+  .header-inner-container,
+  .post-inner-container,
+  .test-container {
+    max-width: 900px;
+  }
+
+  body {
+    .my-img {
+      display: flex;
+      width: 45%;
+    }
+  }
+
+  .my-img img {
+    display: flex;
+    width: 80%;
+    height: calc(100% + 80px);
+  }
+
+  .profile {
+    display: flex;
+  }
+
+  .intro {
+    margin-top: 100px;
+
+    .intro-details p {
+      margin-top: 25px;
+    }
+  }
+}
+
+/* LAPTOP */
+@media (min-width: 992px) {
+  main,
+  .small-footer,
+  .header-inner-container,
+  .post-inner-container,
+  .test-container {
+    max-width: 1094px;
+  }
+
+  body {
+    nav {
+      .ham-menu {
+        display: none;
+      }
+      .hide {
+        display: block;
+
+        #nav-close {
+          display: none;
+        }
+
+        ul {
+          display: flex;
+          gap: 40px;
+
+          li a {
+            font-weight: bolder;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

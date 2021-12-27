@@ -16,58 +16,67 @@
     <!-- HEADER -->
     <header>
       <div class="bg"></div>
-      <nav>
-        <div class="ham-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="mobile-menu hide">
-          <div id="nav-close">&times</div>
-          <ul>
-            <li><a href="#">HI THERE!</a></li>
-            <li><a href="#">RESUME</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">TESTIMONIALS</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="profile">
-        <div class="name-job">
-          <h1 class="profile-name">Kanu Mike</h1>
-          <p>frontend developer</p>
-        </div>
+      <div class="header-inner-container">
+        <nav>
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="mobile-menu hide">
+            <div id="nav-close">&times</div>
+            <ul>
+              <li><a href="#">HI-THERE!</a></li>
+              <li><a href="#">RESUME</a></li>
+              <li><a href="#">PORTFOLIO</a></li>
+              <li><a href="#">TESTIMONIALS</a></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="profile">
+          <div class="my-img">
+            <img src="./images/profilePicture.jpg" alt="My profile Picture" />
+          </div>
+          <div class="pro-add">
+            <div class="name-job">
+              <h1 class="profile-name">Kanu Mike</h1>
+              <p>frontend developer</p>
+            </div>
 
-        <div class="profile-info">
-          <ul class="description">
-            <li>PHONE:</li>
-            <li>EMAIL:</li>
-            <li>ADDRESS:</li>
-          </ul>
+            <div class="profile-info">
+              <ul class="description">
+                <li>PHONE:</li>
+                <li>EMAIL:</li>
+                <li>ADDRESS:</li>
+              </ul>
 
-          <ul class="profile-answer">
-            <li>+(234) 8130262441</li>
-            <li>michotall95@gmail.com</li>
-            <li>Top rank, Ikot Osurua, Ikot Ekpene, Akwa Ibom, Nigeria</li>
-          </ul>
+              <ul class="profile-answer">
+                <li>+(234) 8130262441</li>
+                <li>michotall95@gmail.com</li>
+                <li>Top rank, Ikot Osurua, Ikot Ekpene, Akwa Ibom, Nigeria</li>
+              </ul>
+            </div>
+            <ul class="profile-socials">
+              <li>
+                <a href="#"
+                  ><img src="./images/github.svg" alt="GitHub icon" />
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/LinkedIn.svg" alt="LinkedIn icon" />
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/facebook.svg" alt="Facebook icon" />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul class="profile-socials">
-          <li>
-            <a href="#"><img src="./images/github.svg" alt="GitHub icon" /> </a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="./images/LinkedIn.svg" alt="LinkedIn icon" />
-            </a>
-          </li>
-          <li>
-            <a href="#"
-              ><img src="./images/facebook.svg" alt="Facebook icon" />
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
 
@@ -83,9 +92,12 @@
             and team player who is proficient in an array of scripting languages
             and multimedia Web tools.
           </p>
-          <a href="#" target="_blank">
-            <img src="./images/downloadIcon.svg" alt="" /> DOWNLOAD CV</a
-          >
+
+          <button>
+            <a href="#" target="_blank">
+              <img src="./images/downloadIcon.svg" alt="" /> DOWNLOAD CV</a
+            >
+          </button>
         </div>
         <hr />
       </section>
@@ -223,86 +235,145 @@
             <button type="button" class="project-btn">See details</button>
           </div>
         </div>
-
-        <section class="testimony">
-          <div class="circle"><p class="quote">&rdquo;</p></div>
-          <div class="testimonyBg"></div>
-          <h3>Antonio sanchet</h3>
-          <h4>Project: Landing Page for dropshipping</h4>
-          <hr />
-          <ul>
-            <li class="angle-left">
-              <img
-                src="./images/outline_keyboard_arrow_left_white_24dp.png"
-                alt="Left arrow"
-              />
-            </li>
-            <li>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Blanditiis accusantium commodi, officia voluptates ut debitis ex
-                doloremque similique? Adipisci porro quas fugiat quibusdam omnis
-                dolor optio odit labore culpa, enim mollitia! Assumenda dolorum
-                cum blanditiis magni odit delectus natus corporis!
-              </p>
-            </li>
-            <li class="angle-right">
-              <img
-                src="./images/outline_keyboard_arrow_right_white_24dp.png"
-                alt="Right arrow"
-              />
-            </li>
-          </ul>
-        </section>
-        <hr />
       </section>
-
-      <!-- Lastest Post -->
-      <section class="post">
-        <div class="post-heading">
-          <h2>Latest Post_</h2>
-        </div>
-
-        <div class="card-post">
-          <div class="image-post">
-            <img src="./images/csspreprocessor.jpg" alt="DashBoard" />
-          </div>
-          <div class="post-details">
-            <p class="date">JUNE 22,2021</p>
-            <h2>HOW TO USE THE POWER OF CSS PREPROCESSOR</h2>
-            <p class="post-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              quod voluptatem cupiditate provident ullam tempora eos tempore!
-              Cumque nobis iusto pariatur aspernatur similique enim saepe
-              ratione, labore repellendus incidunt dolor?
-            </p>
-
-            <button type="button" class="project-btn">Read Post</button>
-          </div>
-        </div>
-      </section>
+      <hr />
     </main>
+
+    <!-- Testimony -->
+    <section class="testimony">
+      <div class="circle"><p class="quote">&rdquo;</p></div>
+      <div class="testimonyBg"></div>
+
+      <div class="test-container">
+        <ul>
+          <li class="angle-left">
+            <img
+              src="./images/outline_keyboard_arrow_left_white_24dp.png"
+              alt="Left arrow"
+            />
+          </li>
+          <li>
+            <div class="test-name">
+              <h3>Antonio sanchet</h3>
+              <h4>Project: Landing Page for dropshipping</h4>
+              <hr />
+            </div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Blanditiis accusantium commodi, officia voluptates ut debitis ex
+              doloremque
+            </p>
+          </li>
+          <li class="angle-right">
+            <img
+              src="./images/outline_keyboard_arrow_right_white_24dp.png"
+              alt="Right arrow"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Lastest Post -->
+    <section class="post">
+      <div class="post-inner-container">
+        <div class="post-heading">
+          <h2>Latest Posts_</h2>
+        </div>
+
+        <div class="flex-post">
+          <!-- POst One -->
+          <div class="card-post">
+            <div class="image-post">
+              <img src="./images/csspreprocessor.jpg" alt="DashBoard" />
+            </div>
+            <div class="post-details">
+              <p class="date">JUNE 22,2021</p>
+              <h2>HOW TO USE THE POWER OF CSS PREPROCESSOR</h2>
+              <p class="post-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam quod voluptatem cupiditate provident ullam tempora eos
+                tempore! Cumque nobis iusto pariatur aspernatur similique enim
+                saepe ratione, labore repellendus incidunt dolor?
+              </p>
+
+              <button type="button" class="post-btn">
+                <a href="#"> Read Post </a>
+              </button>
+            </div>
+          </div>
+
+          <!-- Post two -->
+          <div class="card-post">
+            <div class="image-post">
+              <img src="./images/csspreprocessor.jpg" alt="DashBoard" />
+            </div>
+            <div class="post-details">
+              <p class="date">JUNE 22,2021</p>
+              <h2>HOW TO USE THE POWER OF CSS PREPROCESSOR</h2>
+              <p class="post-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam quod voluptatem cupiditate provident ullam tempora eos
+                tempore! Cumque nobis iusto pariatur aspernatur similique enim
+                saepe ratione, labore repellendus incidunt dolor?
+              </p>
+
+              <button type="button" class="post-btn">
+                <a href="#"> Read Post </a>
+              </button>
+            </div>
+          </div>
+
+          <!-- Post three -->
+          <div class="card-post">
+            <div class="image-post">
+              <img src="./images/csspreprocessor.jpg" alt="DashBoard" />
+            </div>
+            <div class="post-details">
+              <p class="date">JUNE 22,2021</p>
+              <h2>HOW TO USE THE POWER OF CSS PREPROCESSOR</h2>
+              <p class="post-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam quod voluptatem cupiditate provident ullam tempora eos
+                tempore! Cumque nobis iusto pariatur aspernatur similique enim
+                saepe ratione, labore repellendus incidunt dolor?
+              </p>
+
+              <button type="button" class="post-btn">
+                <a href="#"> Read Post </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <div class="innerfoot"></div>
+      <div class="samll-footer">
+        <h2>Get in touch_</h2>
 
-      <h2>Get in touch_</h2>
-
-      <form action="#">
-        <input type="text" name="userName" placeholder="Your name" required />
-        <input type="email" name="userEmai" placeholder="Your email" required />
-        <textarea
-          name="msg"
-          id="text-msg"
-          cols="30"
-          rows="10"
-          placeholder="Type the message here"
-          maxlength="500"
-          required
-        ></textarea>
-        <button type="submit">Send</button>
-      </form>
-      <div class="copyrights">&copy; 2021 Free to use</div>
+        <form action="#">
+          <input type="text" name="userName" placeholder="Your name" required />
+          <input
+            type="email"
+            name="userEmai"
+            placeholder="Your email"
+            required
+          />
+          <textarea
+            name="msg"
+            id="text-msg"
+            cols="30"
+            rows="10"
+            placeholder="Type the message here"
+            maxlength="500"
+            required
+          ></textarea>
+          <button type="submit" class="form-btn">Send</button>
+        </form>
+        <div class="copyrights">&copy; 2021 Free to use</div>
+      </div>
     </footer>
   </body>
 </html>

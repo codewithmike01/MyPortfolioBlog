@@ -58,6 +58,7 @@ footer {
 
     button {
       @extend %btn;
+      width: 100%;
       color: #fff;
       text-transform: uppercase;
       text-align: center;

@@ -22,6 +22,10 @@ body {
     }
   }
 
+  .my-img {
+    display: none;
+  }
+
   header::before {
     background: $linear-background;
     height: 100%;
@@ -34,6 +38,7 @@ body {
   }
 
   nav {
+    position: relative;
     padding-top: 55px;
     .ham-menu {
       display: flex;
@@ -47,6 +52,38 @@ body {
     }
     .hide {
       display: none;
+    }
+    .mobile-menu {
+      padding-top: 45px;
+      padding-left: 30px;
+      height: 100vh;
+      width: 100vw;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 2;
+
+      #nav-close {
+        font-size: 2em;
+        color: #fff;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 90px;
+        gap: 40px;
+
+        li a {
+          font-weight: bolder;
+          color: #fff;
+          font-size: 1.3em;
+        }
+      }
     }
   }
 
