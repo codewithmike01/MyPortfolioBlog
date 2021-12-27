@@ -1,5 +1,5 @@
 footer {
-  padding: 50px $padding-content-x 20px $padding-content-x;
+  padding: 50px $padding-content-x 30px $padding-content-x;
   color: #fff;
   background-image: url(.././images/footerbg.jpg);
   background-size: cover;
@@ -65,10 +65,12 @@ footer {
       background-color: $primary-color;
       border: none;
       font-weight: 600;
+      margin: 15px auto;
     }
   }
 
   .copyrights {
+    margin-top: 25px;
     text-align: center;
     opacity: 0.5;
     font-size: 0.8em;

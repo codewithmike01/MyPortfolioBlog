@@ -138,6 +138,8 @@
 
   body {
     nav {
+      position: relative;
+      padding-top: 35px;
       .ham-menu {
         display: none;
       }
@@ -150,14 +152,29 @@
 
         ul {
           display: flex;
-          gap: 40px;
+          flex-direction: row;
+          margin-top: 0;
 
           li a {
             font-weight: bolder;
             color: #fff;
+            font-size: 1em;
           }
         }
       }
+
+      .mobile-menu {
+        padding-top: 0;
+        padding-left: 0;
+        height: 100%;
+        width: auto;
+        position: relative;
+        background-color: transparent;
+        z-index: 1;
+      }
+    }
+    .profile {
+      margin-top: 140px;
     }
   }
 }

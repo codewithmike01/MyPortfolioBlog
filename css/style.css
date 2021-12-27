@@ -349,7 +349,7 @@ main hr {
 }
 
 footer {
-  padding: 50px 12px 20px 12px;
+  padding: 50px 12px 30px 12px;
   color: #fff;
   background-image: url(.././images/footerbg.jpg);
   background-size: cover;
@@ -408,8 +408,10 @@ footer form button {
   background-color: #6d56c1;
   border: none;
   font-weight: 600;
+  margin: 15px auto;
 }
 footer .copyrights {
+  margin-top: 25px;
   text-align: center;
   opacity: 0.5;
   font-size: 0.8em;
@@ -725,6 +727,10 @@ section.post button a {
     max-width: 1094px;
   }
 
+  body nav {
+    position: relative;
+    padding-top: 35px;
+  }
   body nav .ham-menu {
     display: none;
   }
@@ -736,11 +742,25 @@ section.post button a {
   }
   body nav .hide ul {
     display: flex;
-    gap: 40px;
+    flex-direction: row;
+    margin-top: 0;
   }
   body nav .hide ul li a {
     font-weight: bolder;
     color: #fff;
+    font-size: 1em;
+  }
+  body nav .mobile-menu {
+    padding-top: 0;
+    padding-left: 0;
+    height: 100%;
+    width: auto;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+  }
+  body .profile {
+    margin-top: 140px;
   }
 }
 
