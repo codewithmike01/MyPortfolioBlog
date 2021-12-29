@@ -420,9 +420,7 @@ section.testimony {
   padding: 0 12px;
   margin-top: 120px;
   margin-bottom: 160px;
-  padding: 25px 30px;
-  padding-bottom: 70px;
-  height: calc(100% + 45px);
+  padding: 15px 30px;
   background-color: #6d56c1;
   background-image: url(.././images/testimonybg.jpg);
   background-repeat: no-repeat;
@@ -450,7 +448,7 @@ section.testimony .circle .quote {
 }
 section.testimony .testimonyBg {
   background: linear-gradient(54deg, rgba(74, 76, 179, 0.9) 34%, rgba(206, 156, 156, 0.9));
-  height: calc(100% + 45px);
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -460,51 +458,14 @@ section.testimony .testimonyBg {
   opacity: 0.95;
 }
 section.testimony .test-container {
+  position: relative;
   width: 90%;
   margin: 0 auto;
-  margin-top: 60px;
 }
 section.testimony .test-container hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border-color: rgba(206, 156, 156, 0.7);
-}
-section.testimony .test-container .test-name {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-section.testimony .test-container .test-name h3 {
-  font-size: 1.3em;
-  letter-spacing: 0px;
-  color: #fff;
-  text-transform: uppercase;
-}
-section.testimony .test-container .test-name h4 {
-  font-size: 0.9em;
-  color: rgba(235, 231, 231, 0.8);
-}
-section.testimony .test-container ul {
-  display: flex;
-  align-items: center;
-  width: calc(100% + 100px);
-  margin-left: -50px;
-  gap: 7px;
-}
-section.testimony .test-container ul li {
-  list-style-type: none;
-}
-section.testimony .test-container ul li p {
-  width: calc(100% + 35px);
-  margin-left: -5px;
-}
-section.testimony .test-container ul .angle-right {
-  margin-top: 10%;
-  margin-left: 5%;
-}
-section.testimony .test-container ul .angle-left {
-  margin-top: 10%;
-  margin-right: 3%;
 }
 section.testimony .test-container ul li:nth-child(2n) {
   line-height: 30px;
@@ -512,6 +473,91 @@ section.testimony .test-container ul li:nth-child(2n) {
 section.testimony .test-container p {
   color: #fff;
   font-size: 1.1em;
+}
+section.testimony .test-container .carousel-conatiner li {
+  list-style: none;
+}
+section.testimony .test-container .carousel-conatiner .carousel-content {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  margin: 0 auto;
+  position: relative;
+}
+section.testimony .test-container .carousel-conatiner .carousel-content .carousel-ul {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transition: transform 250ms ease-in;
+}
+section.testimony .test-container .carousel-conatiner .carousel-content .carousel-item {
+  margin-left: -6.897em;
+  padding-left: 10.875em;
+  padding-right: 5.25em;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+section.testimony .test-container .carousel-conatiner .carousel-content .current-slide {
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+  visibility: visible;
+}
+section.testimony .test-container .carousel-conatiner .carousel-content .head-carousel h2 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+section.testimony .test-container .carousel-conatiner .carousel-content .head-carousel p {
+  font-size: 0.9em;
+}
+section.testimony .test-container .carousel-conatiner .carousel-content .main-p p {
+  font-size: 1em;
+  line-height: 32px;
+  font-weight: bold;
+}
+section.testimony .test-container .carousel-conatiner .button-carousel {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+section.testimony .test-container .carousel-conatiner .button-carousel .right-arrow,
+section.testimony .test-container .carousel-conatiner .button-carousel .left-arrow {
+  height: 45px;
+  width: 45px;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  margin-top: 5em;
+}
+section.testimony .test-container .carousel-conatiner .button-carousel .right-arrow {
+  margin-right: -2.4em;
+}
+section.testimony .test-container .carousel-conatiner .button-carousel .left-arrow {
+  margin-left: -2.4em;
+}
+section.testimony .test-container .carousel-conatiner .carousel-circle {
+  padding-bottom: 1em;
+  position: relative;
+  margin-top: 15em;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+section.testimony .test-container .carousel-conatiner .carousel-circle .circle-item {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+section.testimony .test-container .carousel-conatiner .carousel-circle .circle-fill {
+  background-color: #fff;
 }
 
 section.post {
@@ -617,6 +663,10 @@ section.post button a {
 
   .circle {
     transform: translateX(150%);
+  }
+
+  section.testimony .test-container .carousel-conatiner .carousel-circle {
+    margin-top: 8em;
   }
 }
 /* MOBILE */
@@ -760,6 +810,12 @@ section.post button a {
   }
   body .profile {
     margin-top: 140px;
+  }
+
+  section.testimony .test-container .carousel-conatiner .carousel-content .carousel-item {
+    margin-left: -8.897em;
+    padding-left: 20.875em;
+    padding-right: 5.25em;
   }
 }
 

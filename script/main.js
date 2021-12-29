@@ -8,7 +8,6 @@ const closeMenu = document.getElementById('nav-close');
 ------------------------------*/
 
 function openCloseMenu() {
-  console.log('hello');
   mobileMenu.classList.toggle('hide');
   hamMenu.classList.toggle('hide');
 }

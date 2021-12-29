@@ -15,6 +15,16 @@
   .circle {
     transform: translateX(150%);
   }
+
+  section.testimony {
+    .test-container {
+      .carousel-conatiner {
+        .carousel-circle {
+          margin-top: 8em;
+        }
+      }
+    }
+  }
 }
 
 /* MOBILE */
@@ -175,6 +185,20 @@
     }
     .profile {
       margin-top: 140px;
+    }
+  }
+
+  section.testimony {
+    .test-container {
+      .carousel-conatiner {
+        .carousel-content {
+          .carousel-item {
+            margin-left: -8.897em;
+            padding-left: 20.875em;
+            padding-right: 5.25em;
+          }
+        }
+      }
     }
   }
 }

@@ -10,7 +10,8 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <script defer src="main.js"></script>
+    <script defer src="./script/main.js"></script>
+    <script defer src="./script/carousel.js"></script>
     <title>Mike's Portfolio/Blog</title>
   </head>
   <body>
@@ -246,32 +247,79 @@
       <div class="testimonyBg"></div>
 
       <div class="test-container">
-        <ul>
-          <li class="angle-left">
-            <img
-              src="./images/outline_keyboard_arrow_left_white_24dp.png"
-              alt="Left arrow"
-            />
-          </li>
-          <li>
-            <div class="test-name">
-              <h3>Antonio sanchet</h3>
-              <h4>Project: Landing Page for dropshipping</h4>
-              <hr />
+        <div class="carousel-conatiner">
+          <!-- Carousel content -->
+          <div class="carousel-content">
+            <div class="carousel-ul">
+              <div class="carousel-item current-slide">
+                <div class="head-carousel">
+                  <h2>Benjamin Noble</h2>
+                  <p>Project: Landing page for toronto</p>
+                  <hr />
+                </div>
+                <div class="main-p">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Error quaerat, repellendus quasi minus voluptate nisi
+                    laudantium deserunt atque ullam quidem consequuntur
+                    reiciendis!
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="head-carousel">
+                  <h2>Sirri Rockstar</h2>
+                  <p>Project: Landing page for toronto</p>
+                  <hr />
+                </div>
+                <div class="main-p">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Error quaerat, repellendus quasi minus voluptate nisi
+                    laudantium deserunt atque ullam quidem consequuntur
+                    reiciendis!
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="head-carousel">
+                  <h2>Mike De'Gentle</h2>
+                  <p>Project: Landing page for toronto</p>
+                  <hr />
+                </div>
+                <div class="main-p">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Error quaerat, repellendus quasi minus voluptate nisi
+                    laudantium deserunt atque ullam quidem consequuntur
+                    reiciendis!
+                  </p>
+                </div>
+              </div>
             </div>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Blanditiis accusantium commodi, officia voluptates ut debitis ex
-              doloremque
-            </p>
-          </li>
-          <li class="angle-right">
-            <img
-              src="./images/outline_keyboard_arrow_right_white_24dp.png"
-              alt="Right arrow"
-            />
-          </li>
-        </ul>
+          </div>
+          <!-- button -->
+          <div class="button-carousel">
+            <div class="left-arrow" aria-label="previous slide" tabindex="0">
+              <img
+                src="./images/outline_keyboard_arrow_left_white_24dp.png"
+                alt="previous slide"
+              />
+            </div>
+            <div class="right-arrow" aria-label="previous slide" tabindex="0">
+              <img
+                src="./images/outline_keyboard_arrow_right_white_24dp.png"
+                alt="next slide"
+              />
+            </div>
+          </div>
+          <!-- Carousel Circle -->
+          <div class="carousel-circle">
+            <div class="circle-item circle-fill"></div>
+            <div class="circle-item"></div>
+            <div class="circle-item"></div>
+          </div>
+        </div>
       </div>
     </section>
 
