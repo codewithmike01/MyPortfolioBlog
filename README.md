@@ -8,7 +8,7 @@ LIVE DEMO: [Myportfolio](https://ginohmk.github.io/MyPortfolioBlog/)
 
 ## Built With
 
-- HTML & CSS
+- HTML, SASS and Javascript
 
 ## Getting Started
 
