@@ -4,7 +4,7 @@ This is my personal portfolio Website, which is a work in progress.
 
 ## Live Preview
 
-LIVE DEMO: [Myportfolio](https://ginohmk.github.io/My-portfolio/)
+LIVE DEMO: [Myportfolio](https://ginohmk.github.io/MyPortfolioBlog/)
 
 ## Built With
 
