@@ -1,0 +1,78 @@
+footer {
+  padding: 50px $padding-content-x 30px $padding-content-x;
+  color: #fff;
+  background-image: url(.././images/footerbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+
+  .innerfoot {
+    background: $linear-background;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    z-index: -1;
+    opacity: 0.9;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 25px;
+
+    ::placeholder {
+      color: #fff;
+      font-size: 0.8em;
+    }
+
+    input[type='text'],
+    input[type='email'] {
+      height: 50px;
+    }
+
+    input[type='text'],
+    input[type='email'],
+    textarea {
+      background-color: inherit;
+      border: 2px solid #fff;
+      border-radius: 8px;
+      outline: none;
+      padding-left: 10px;
+      color: #fff;
+      font-size: 1.1em;
+    }
+
+    textarea {
+      padding-top: 15px;
+    }
+
+    button {
+      @extend %btn;
+      width: 100%;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      background-color: $primary-color;
+      border: none;
+      font-weight: 600;
+      margin: 15px auto;
+    }
+  }
+
+  .copyrights {
+    margin-top: 25px;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 0.8em;
+  }
+}
