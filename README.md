@@ -12,14 +12,15 @@ LIVE DEMO: [Myportfolio](https://ginohmk.github.io/My-portfolio/)
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple example steps. 👷‍♂️
 
 ### Prerequisites
 
-clone repo: `git@github.com:Ginohmk/My-portfolio.git`
+clone repo: `https://github.com/Ginohmk/MyPortfolioBlog.git`
+
 
 then
-`cd My-portfolio`
+`cd MyPortfolioBlog`
 
 ### Install
 
@@ -39,6 +40,6 @@ run `npm install` to install dependencies
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/)
+Feel free to check the [issues page](https://github.com/Ginohmk/MyPortfolioBlog/issues)
 
 
