@@ -16,6 +16,7 @@ section.post button, footer form button, main section.project .project-btn, main
   border-radius: 25px;
   color: #fff;
   width: 50%;
+  cursor: pointer;
 }
 
 body {
