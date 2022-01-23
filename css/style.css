@@ -61,11 +61,12 @@ body nav .ham-menu {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  cursor: pointer;
 }
 body nav .ham-menu span {
   border: 1px solid #fff;
   height: 2px;
-  width: 15px;
+  width: 30px;
 }
 body nav .hide {
   display: none;
@@ -80,9 +81,10 @@ body nav .mobile-menu {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 body nav .mobile-menu #nav-close {
+  cursor: pointer;
   font-size: 2em;
   color: #fff;
 }
@@ -98,12 +100,17 @@ body nav .mobile-menu ul li a {
   color: #fff;
   font-size: 1.3em;
 }
+body nav .mobile-menu ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #6d56c1;
+  text-decoration-thickness: 10px;
+}
 body .profile,
 body .profile-info {
   color: #fff;
 }
 body .profile {
-  margin-top: 120px;
+  margin-top: 80px;
   margin-bottom: 15px;
 }
 body .profile .name-job h1 {
@@ -121,6 +128,9 @@ body .profile-info {
   margin-top: 30px;
   display: flex;
   gap: 5px;
+}
+body .profile-info .profile-intro span a {
+  color: #fff;
 }
 body .profile-info ul {
   display: flex;
@@ -141,6 +151,11 @@ body .profile-socials {
 body .profile-socials img {
   width: 33px;
   height: 33px;
+  opacity: 0.7;
+}
+body .profile-socials .linkedIn {
+  width: 35px;
+  height: 35px;
 }
 body a {
   text-decoration: none;
@@ -367,7 +382,33 @@ footer .innerfoot {
   z-index: -1;
   opacity: 0.9;
 }
-footer h2 {
+footer .profile-foot {
+  margin-top: 50px;
+}
+footer .profile-foot .description {
+  width: 97%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .profile-foot .description li ul li:nth-child(odd) {
+  font-weight: bold;
+}
+footer .profile-foot .description li ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+footer .profile-foot .description li ul li {
+  color: #fff;
+}
+footer .profile-foot li {
+  list-style-type: none;
+}
+footer h2,
+footer h3 {
   text-align: center;
   margin-bottom: 35px;
 }
@@ -726,11 +767,25 @@ section.post button a {
     max-width: 250px;
   }
 
-  footer form {
+  footer h2 {
+    margin-bottom: 90px;
+    text-align: center;
+  }
+  footer .small-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+  footer .small-footer .profile-foot {
+    margin-top: -30px;
+  }
+  footer .small-footer form {
     max-width: 645px;
     margin: 0 auto;
   }
-  footer form .form-btn {
+  footer .small-footer form .form-btn {
     max-width: 290px;
   }
 }
