@@ -89,11 +89,27 @@
   }
 
   footer {
-    form {
-      max-width: 645px;
-      margin: 0 auto;
-      .form-btn {
-        max-width: 290px;
+    h2 {
+      margin-bottom: 90px;
+      text-align: center;
+    }
+    .small-footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+
+      .profile-foot {
+        margin-top: -30px;
+      }
+
+      form {
+        max-width: 645px;
+        margin: 0 auto;
+        .form-btn {
+          max-width: 290px;
+        }
       }
     }
   }

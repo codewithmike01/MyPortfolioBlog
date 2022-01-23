@@ -19,7 +19,39 @@ footer {
     opacity: 0.9;
   }
 
-  h2 {
+  .profile-foot {
+    margin-top: 50px;
+
+    .description {
+      width: 97%;
+      margin: 0 auto;
+
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      li {
+        ul li:nth-child(odd) {
+          font-weight: bold;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          text-align: center;
+          li {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+  }
+
+  h2,
+  h3 {
     text-align: center;
     margin-bottom: 35px;
   }

@@ -26,7 +26,7 @@
             <span></span>
           </div>
           <div class="mobile-menu hide">
-            <div id="nav-close">&times</div>
+            <div><span id="nav-close">&times</span></div>
             <ul>
               <li><a href="#">HI-THERE!</a></li>
               <li><a href="#">RESUME</a></li>
@@ -46,34 +46,27 @@
               <h1 class="profile-name">Kanu Mike</h1>
               <p>frontend developer</p>
             </div>
-
             <div class="profile-info">
-              <ul class="description">
-                <li>PHONE:</li>
-                <li>EMAIL:</li>
-                <li>ADDRESS:</li>
-              </ul>
-
-              <ul class="profile-answer">
-                <li>+(234) 8130262441</li>
-                <li>michotall95@gmail.com</li>
-                <li>Top rank, Ikot Osurua, Ikot Ekpene, Akwa Ibom, Nigeria</li>
-              </ul>
+              <p class="profile-intro">
+                I am a Web developer able to build a Web presence from the
+                ground up - from concept, navigation, layout and programming to
+                UX and SEO.<br />
+                <span><a href="#">Know More...</a></span>
+              </p>
             </div>
             <ul class="profile-socials">
               <li>
                 <a href="#"
-                  ><img src="./images/github.svg" alt="GitHub icon" />
+                  ><img src="./images/Github.png" alt="GitHub icon" />
                 </a>
               </li>
               <li>
                 <a href="#"
-                  ><img src="./images/LinkedIn.svg" alt="LinkedIn icon" />
-                </a>
-              </li>
-              <li>
-                <a href="#"
-                  ><img src="./images/facebook.svg" alt="Facebook icon" />
+                  ><img
+                    src="./images/LinkedIn.png"
+                    alt="LinkedIn icon"
+                    class="linkedIn"
+                  />
                 </a>
               </li>
             </ul>
@@ -83,23 +76,36 @@
     </header>
 
     <main>
-      <section class="intro">
-        <h2>Hi_</h2>
-        <div class="intro-details">
-          <p class="intro">
-            I am a Web developer able to build a Web presence from the ground up
-            - from concept, navigation, layout and programming to UX and SEO.
-            Skilled at writing well-designed, testable and efficient code using
-            current best practices in Web development. Fast learner, hard worker
-            and team player who is proficient in an array of scripting languages
-            and multimedia Web tools.
-          </p>
+      <!-- Projects -->
+      <section class="project">
+        <div class="project-heading">
+          <h2>My projects_</h2>
+          <h4>ALL MOBILE APPS WEB-SITES & LANDING PAGES</h4>
+        </div>
 
-          <button>
-            <a href="#" target="_blank">
-              <img src="./images/downloadIcon.svg" alt="" /> DOWNLOAD CV</a
-            >
-          </button>
+        <div class="card-project">
+          <div class="image-project">
+            <img src="./images/dashboard.png" alt="DashBoard" />
+          </div>
+          <div class="project-details">
+            <h2>MOBILE AND DESKTOP DASHBOARD FOR NIROBI NEWS REPORT</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              quod voluptatem cupiditate provident ullam tempora eos tempore!
+              Cumque nobis iusto pariatur aspernatur similique enim saepe
+              ratione, labore repellendus incidunt dolor?
+            </p>
+
+            <h4>USED STACK:</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SASS</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+
+            <button type="button" class="project-btn">See details</button>
+          </div>
         </div>
         <hr />
       </section>
@@ -207,38 +213,26 @@
         </div>
       </section>
 
-      <section class="project">
-        <div class="project-heading">
-          <h2>My projects_</h2>
-          <h4>ALL MOBILE APPS WEB-SITES & LANDING PAGES</h4>
-        </div>
-
-        <div class="card-project">
-          <div class="image-project">
-            <img src="./images/dashboard.png" alt="DashBoard" />
-          </div>
-          <div class="project-details">
-            <h2>MOBILE AND DESKTOP DASHBOARD FOR NIROBI NEWS REPORT</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              quod voluptatem cupiditate provident ullam tempora eos tempore!
-              Cumque nobis iusto pariatur aspernatur similique enim saepe
-              ratione, labore repellendus incidunt dolor?
-            </p>
-
-            <h4>USED STACK:</h4>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>SASS</li>
-              <li>JAVASCRIPT</li>
-            </ul>
-
-            <button type="button" class="project-btn">See details</button>
-          </div>
-        </div>
-      </section>
       <hr />
+
+      <section class="intro">
+        <h2>Hi_</h2>
+        <div class="intro-details">
+          <p class="intro">
+            I am skilled at writing well-designed, testable and efficient code
+            using current best practices in Web development. Fast learner, hard
+            worker and team player who is proficient in an array of scripting
+            languages and multimedia Web tools.
+          </p>
+
+          <button>
+            <a href="#" target="_blank">
+              <img src="./images/downloadIcon.svg" alt="" /> DOWNLOAD CV</a
+            >
+          </button>
+        </div>
+        <hr />
+      </section>
     </main>
 
     <!-- Testimony -->
@@ -397,32 +391,63 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer>
       <div class="innerfoot"></div>
-      <div class="samll-footer">
-        <h2>Get in touch_</h2>
+      <h2>Get in touch_</h2>
+      <div class="small-footer">
+        <div class="form-h2">
+          <form action="#">
+            <input
+              type="text"
+              name="userName"
+              placeholder="Your name"
+              required
+            />
+            <input
+              type="email"
+              name="userEmai"
+              placeholder="Your email"
+              required
+            />
+            <textarea
+              name="msg"
+              id="text-msg"
+              cols="30"
+              rows="10"
+              placeholder="Type the message here"
+              maxlength="500"
+              required
+            ></textarea>
+            <button type="submit" class="form-btn">Send</button>
+          </form>
+        </div>
+        <div class="profile-foot">
+          <ul class="description">
+            <li>
+              <ul class="innerUl">
+                <li>PHONE:</li>
+                <li>+(234) 8130262441</li>
+              </ul>
+            </li>
 
-        <form action="#">
-          <input type="text" name="userName" placeholder="Your name" required />
-          <input
-            type="email"
-            name="userEmai"
-            placeholder="Your email"
-            required
-          />
-          <textarea
-            name="msg"
-            id="text-msg"
-            cols="30"
-            rows="10"
-            placeholder="Type the message here"
-            maxlength="500"
-            required
-          ></textarea>
-          <button type="submit" class="form-btn">Send</button>
-        </form>
-        <div class="copyrights">&copy; 2021 Free to use</div>
+            <li>
+              <ul>
+                <li>EMAIL:</li>
+                <li>Michotall95@gmail.com</li>
+              </ul>
+            </li>
+
+            <li>
+              <ul>
+                <li>ADDRESS:</li>
+                <li>Top rank, Ikot Osurua, Ikot Ekpene, Akwa Ibom, Nigeria</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
+      <div class="copyrights">&copy; 2021 Free to use</div>
     </footer>
   </body>
 </html>
