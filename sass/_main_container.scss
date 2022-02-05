@@ -95,10 +95,15 @@ main {
         gap: 15px;
 
         .education-answer {
-          margin-top: -3.4em;
+          margin-top: -3.3em;
           display: flex;
           flex-direction: column;
-          gap: 0.625em;
+          gap: 1.2em;
+
+          li:nth-child(even) {
+            margin-top: 10px;
+            margin-bottom: -10px;
+          }
 
           div {
             display: flex;
@@ -110,6 +115,7 @@ main {
               font-size: 0.7em;
             }
           }
+
           li {
             display: flex;
             flex-direction: column;
@@ -135,45 +141,25 @@ main {
       }
 
       .skills {
-        .skill-name {
-          display: flex;
-          justify-content: space-between;
-          margin-bottom: 12px;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        align-items: center;
+
+        h4 {
+          margin-top: 0;
         }
 
-        .skill-progress {
-          height: 10px;
-          background-color: lighten(#555, 50%);
-          border-radius: 5px;
+        .skill-details {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
 
-          .inner-indicator {
-            height: 10px;
-            background-color: $primary-color;
-            border-radius: 5px;
-          }
-
-          .html {
-            width: 90%;
-          }
-
-          .css {
-            width: 80%;
-          }
-
-          .javascript {
-            width: 72%;
-          }
-          .bootstrap {
-            width: 75%;
-          }
-
-          .git {
-            width: 63%;
-          }
-
-          .photoshop {
-            width: 74%;
-          }
+        .skill-name {
+          display: flex;
+          margin-bottom: 9px;
         }
       }
     }

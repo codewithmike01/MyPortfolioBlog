@@ -247,10 +247,14 @@ main section.resume div.education div.education-details {
   gap: 15px;
 }
 main section.resume div.education div.education-details .education-answer {
-  margin-top: -3.4em;
+  margin-top: -3.3em;
   display: flex;
   flex-direction: column;
-  gap: 0.625em;
+  gap: 1.2em;
+}
+main section.resume div.education div.education-details .education-answer li:nth-child(even) {
+  margin-top: 10px;
+  margin-bottom: -10px;
 }
 main section.resume div.education div.education-details .education-answer div {
   display: flex;
@@ -280,38 +284,24 @@ main section.resume div.general-skill {
 main section.resume div.general-skill h3 {
   margin-bottom: -5px;
 }
+main section.resume div.general-skill .skills {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: center;
+}
+main section.resume div.general-skill .skills h4 {
+  margin-top: 0;
+}
+main section.resume div.general-skill .skills .skill-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 main section.resume div.general-skill .skills .skill-name {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 12px;
-}
-main section.resume div.general-skill .skills .skill-progress {
-  height: 10px;
-  background-color: #d5d5d5;
-  border-radius: 5px;
-}
-main section.resume div.general-skill .skills .skill-progress .inner-indicator {
-  height: 10px;
-  background-color: #6d56c1;
-  border-radius: 5px;
-}
-main section.resume div.general-skill .skills .skill-progress .html {
-  width: 90%;
-}
-main section.resume div.general-skill .skills .skill-progress .css {
-  width: 80%;
-}
-main section.resume div.general-skill .skills .skill-progress .javascript {
-  width: 72%;
-}
-main section.resume div.general-skill .skills .skill-progress .bootstrap {
-  width: 75%;
-}
-main section.resume div.general-skill .skills .skill-progress .git {
-  width: 63%;
-}
-main section.resume div.general-skill .skills .skill-progress .photoshop {
-  width: 74%;
+  margin-bottom: 9px;
 }
 main section.project .project-heading {
   margin-bottom: 45px;
@@ -721,6 +711,10 @@ section.post button a {
     margin-top: 1.3375em;
   }
 
+  .education-answer li:nth-child(3n) {
+    margin-top: 1.3em;
+  }
+
   button {
     max-width: 210px;
   }
@@ -736,13 +730,7 @@ section.post button a {
   }
 
   .skills {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2.7em;
-  }
-  .skills .skill-details {
-    width: 46%;
+    justify-content: center;
   }
 
   .card-project {
@@ -854,6 +842,9 @@ section.post button a {
     font-weight: bolder;
     color: #fff;
     font-size: 1em;
+  }
+  body nav .hide ul li a:hover {
+    text-decoration-color: #fff;
   }
   body nav .mobile-menu {
     padding-top: 0;

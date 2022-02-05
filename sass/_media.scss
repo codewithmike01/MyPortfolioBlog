@@ -37,6 +37,10 @@
     margin-top: 1.3375em;
   }
 
+  .education-answer li:nth-child(3n) {
+    margin-top: 1.3em;
+  }
+
   button {
     max-width: 210px;
   }
@@ -53,14 +57,7 @@
   }
 
   .skills {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2.7em;
-
-    .skill-details {
-      width: 46%;
-    }
+    justify-content: center;
   }
 
   .card-project {
@@ -185,6 +182,10 @@
             font-weight: bolder;
             color: #fff;
             font-size: 1em;
+          }
+
+          li a:hover {
+            text-decoration-color: #fff;
           }
         }
       }
