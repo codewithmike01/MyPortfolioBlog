@@ -1,5 +1,14 @@
 // MEADIA QUERY
 
+/* SMALL MOBILE*/
+@media (min-width: 399px) {
+  section.testimony {
+    .circle {
+      left: 14%;
+    }
+  }
+}
+
 /* MOBILE*/
 @media (min-width: 447px) {
   main,
@@ -17,6 +26,10 @@
   }
 
   section.testimony {
+    .circle {
+      left: 20%;
+    }
+
     .test-container {
       .carousel-conatiner {
         .carousel-circle {
@@ -43,6 +56,12 @@
 
   button {
     max-width: 210px;
+  }
+
+  section.testimony {
+    .circle {
+      left: 25%;
+    }
   }
 }
 
@@ -110,6 +129,12 @@
       }
     }
   }
+
+  section.testimony {
+    .circle {
+      left: 35%;
+    }
+  }
 }
 
 /* TABLET */
@@ -145,6 +170,11 @@
 
     .intro-details p {
       margin-top: 25px;
+    }
+  }
+  section.testimony {
+    .circle {
+      left: 40%;
     }
   }
 }
@@ -206,6 +236,10 @@
   }
 
   section.testimony {
+    .circle {
+      left: 38%;
+    }
+
     .test-container {
       .carousel-conatiner {
         .carousel-content {

@@ -52,6 +52,13 @@ main {
   }
 
   section.resume {
+    .resume-details {
+      p {
+        line-height: $line-height;
+        word-spacing: $word-space;
+      }
+    }
+
     li {
       list-style-type: none;
       p {
@@ -100,9 +107,13 @@ main {
           flex-direction: column;
           gap: 1.2em;
 
+          p {
+            word-spacing: 0;
+          }
+
           li:nth-child(even) {
-            margin-top: 10px;
-            margin-bottom: -10px;
+            margin-top: 0;
+            margin-bottom: -19px;
           }
 
           div {
@@ -189,6 +200,11 @@ main {
 
       .project-details {
         padding: 0 0.7em;
+
+        p {
+          line-height: $line-height;
+          word-spacing: $word-space;
+        }
       }
 
       ul {

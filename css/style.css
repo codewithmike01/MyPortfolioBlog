@@ -126,9 +126,13 @@ body .profile .name-job p {
   font-size: 0.9em;
 }
 body .profile-info {
-  margin-top: 30px;
+  margin-top: 25px;
   display: flex;
   gap: 5px;
+}
+body .profile-info .profile-intro {
+  line-height: 35px;
+  word-spacing: 0.4em;
 }
 body .profile-info .profile-intro span a {
   color: #fff;
@@ -210,6 +214,10 @@ main section.intro button a {
   gap: 7px;
   font-size: 1.2em;
 }
+main section.resume .resume-details p {
+  line-height: 37px;
+  word-spacing: 0.4em;
+}
 main section.resume li {
   list-style-type: none;
 }
@@ -252,9 +260,12 @@ main section.resume div.education div.education-details .education-answer {
   flex-direction: column;
   gap: 1.2em;
 }
+main section.resume div.education div.education-details .education-answer p {
+  word-spacing: 0;
+}
 main section.resume div.education div.education-details .education-answer li:nth-child(even) {
-  margin-top: 10px;
-  margin-bottom: -10px;
+  margin-top: 0;
+  margin-bottom: -19px;
 }
 main section.resume div.education div.education-details .education-answer div {
   display: flex;
@@ -324,6 +335,10 @@ main section.project .card-project img {
 }
 main section.project .card-project .project-details {
   padding: 0 0.7em;
+}
+main section.project .card-project .project-details p {
+  line-height: 37px;
+  word-spacing: 0.4em;
 }
 main section.project .card-project ul {
   margin-top: 25px;
@@ -680,6 +695,12 @@ section.post button a {
   font-size: 1.2em;
 }
 
+/* SMALL MOBILE*/
+@media (min-width: 399px) {
+  section.testimony .circle {
+    left: 14%;
+  }
+}
 /* MOBILE*/
 @media (min-width: 447px) {
   main,
@@ -697,6 +718,9 @@ section.post button a {
     transform: translateX(150%);
   }
 
+  section.testimony .circle {
+    left: 20%;
+  }
   section.testimony .test-container .carousel-conatiner .carousel-circle {
     margin-top: 8em;
   }
@@ -717,6 +741,10 @@ section.post button a {
 
   button {
     max-width: 210px;
+  }
+
+  section.testimony .circle {
+    left: 25%;
   }
 }
 /* TABLET */
@@ -777,6 +805,10 @@ section.post button a {
   footer .small-footer form .form-btn {
     max-width: 290px;
   }
+
+  section.testimony .circle {
+    left: 35%;
+  }
 }
 /* TABLET */
 @media (min-width: 989px) {
@@ -808,6 +840,10 @@ section.post button a {
   }
   .intro .intro-details p {
     margin-top: 25px;
+  }
+
+  section.testimony .circle {
+    left: 40%;
   }
 }
 /* LAPTOP */
@@ -859,6 +895,9 @@ section.post button a {
     margin-top: 140px;
   }
 
+  section.testimony .circle {
+    left: 38%;
+  }
   section.testimony .test-container .carousel-conatiner .carousel-content .carousel-item {
     margin-left: -8.897em;
     padding-left: 20.875em;

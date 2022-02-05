@@ -10,7 +10,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <script defer src="./script/main.js"></script>
+    <script type="module" defer src="./script/main.js"></script>
     <script defer src="./script/carousel.js"></script>
     <title>Mike's Portfolio/Blog</title>
   </head>
@@ -44,7 +44,7 @@
           <div class="pro-add">
             <div class="name-job">
               <h1 class="profile-name">Kanu Mike</h1>
-              <p>frontend developer</p>
+              <p>Frontend developer</p>
             </div>
             <div class="profile-info">
               <p class="profile-intro">
@@ -80,37 +80,13 @@
       <section class="project">
         <div class="project-heading">
           <h2>My projects_</h2>
-          <h4>ALL MOBILE APPS WEB-SITES & LANDING PAGES</h4>
         </div>
 
-        <div class="card-project">
-          <div class="image-project">
-            <img src="./images/dashboard.png" alt="DashBoard" />
-          </div>
-          <div class="project-details">
-            <h2>MOBILE AND DESKTOP DASHBOARD FOR NIROBI NEWS REPORT</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              quod voluptatem cupiditate provident ullam tempora eos tempore!
-              Cumque nobis iusto pariatur aspernatur similique enim saepe
-              ratione, labore repellendus incidunt dolor?
-            </p>
-
-            <h4>USED STACK:</h4>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>SASS</li>
-              <li>JAVASCRIPT</li>
-            </ul>
-
-            <button type="button" class="project-btn">See details</button>
-          </div>
-        </div>
-        <hr />
+        <!-- Dynamic Project Render -->
       </section>
 
       <section class="resume">
+        <hr />
         <h2>Resume_</h2>
         <div class="resume-details">
           <p>
@@ -160,96 +136,14 @@
         <div class="general-skill">
           <h3>GENERAL SKILLS</h3>
           <div class="skills">
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>GIT</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/gitSkill.png" alt="" />
-              </div>
-            </div>
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>GITHUB</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/githubSkill.png" alt="" />
-              </div>
-            </div>
-
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>HTML5</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/html5Skill.png" alt="" />
-              </div>
-            </div>
-
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>CSS3</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/css3Skills.png" alt="" />
-              </div>
-            </div>
-
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>JAVASCRIPT</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/jsSkill.png" alt="" />
-              </div>
-            </div>
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>JEST</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/jestSkill.png" alt="" />
-              </div>
-            </div>
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>WEBPACK</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/webpackSkill.png" alt="" />
-              </div>
-            </div>
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>SASS</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/sassSkill.png" alt="" />
-              </div>
-            </div>
-
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>BOOTSTRAP</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/bootstrapSkill.png" alt="" />
-              </div>
-            </div>
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>PHOTOSHOP</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/photoshopSkill.png" alt="" />
-              </div>
-            </div>
+            <!-- Dynamic Skills Rendering -->
           </div>
         </div>
       </section>
 
       <hr />
 
+      <!-- KNow More -->
       <section class="intro">
         <h2>Hi_</h2>
         <div class="intro-details">
@@ -432,7 +326,7 @@
       <h2>Get in touch_</h2>
       <div class="small-footer">
         <div class="form-h2">
-          <form action="#">
+          <form action="https://formspree.io/f/moqrqvny" method="POST">
             <input
               type="text"
               name="userName"

@@ -116,11 +116,14 @@ body {
   }
 
   .profile-info {
-    margin-top: 30px;
+    margin-top: 25px;
     display: flex;
     gap: 5px;
 
     .profile-intro {
+      line-height: 35px;
+      word-spacing: $word-space;
+
       span {
         a {
           color: #fff;
