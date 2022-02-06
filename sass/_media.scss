@@ -151,18 +151,19 @@
   body {
     .my-img {
       display: flex;
-      width: 45%;
+      width: 70%;
     }
   }
 
   .my-img img {
     display: flex;
-    width: 80%;
-    height: calc(100% + 80px);
+    width: 100%;
+    height: calc(100% + 85px);
   }
 
   .profile {
     display: flex;
+    gap: 25px;
   }
 
   .intro {
@@ -237,7 +238,7 @@
 
   section.testimony {
     .circle {
-      left: 38%;
+      left: 42%;
     }
 
     .test-container {

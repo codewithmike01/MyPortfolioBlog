@@ -822,17 +822,18 @@ section.post button a {
 
   body .my-img {
     display: flex;
-    width: 45%;
+    width: 70%;
   }
 
   .my-img img {
     display: flex;
-    width: 80%;
-    height: calc(100% + 80px);
+    width: 100%;
+    height: calc(100% + 85px);
   }
 
   .profile {
     display: flex;
+    gap: 25px;
   }
 
   .intro {
@@ -896,7 +897,7 @@ section.post button a {
   }
 
   section.testimony .circle {
-    left: 38%;
+    left: 42%;
   }
   section.testimony .test-container .carousel-conatiner .carousel-content .carousel-item {
     margin-left: -8.897em;
