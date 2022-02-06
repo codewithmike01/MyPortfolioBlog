@@ -482,7 +482,7 @@ section.testimony .circle {
   width: 100px;
   top: -55px;
   background-color: #fff;
-  transform: translateX(99%);
+  transform: translateX(70%);
   border-radius: 50%;
 }
 section.testimony .circle .quote {
@@ -744,7 +744,7 @@ section.post button a {
   }
 
   section.testimony .circle {
-    left: 25%;
+    left: 30%;
   }
 }
 /* TABLET */
@@ -897,7 +897,7 @@ section.post button a {
   }
 
   section.testimony .circle {
-    left: 42%;
+    left: 39%;
   }
   section.testimony .test-container .carousel-conatiner .carousel-content .carousel-item {
     margin-left: -8.897em;
