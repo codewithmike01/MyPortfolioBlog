@@ -29,6 +29,7 @@ body p {
   line-height: 32px;
 }
 body header {
+  margin-bottom: 120px;
   position: relative;
   width: 100%;
   height: 600px;
@@ -150,15 +151,17 @@ body .profile-info .profile-answer li {
 }
 body .profile-socials {
   display: flex;
+  align-items: center;
   margin-top: 43px;
-  gap: 15px;
+  gap: 18px;
 }
 body .profile-socials img {
-  width: 33px;
-  height: 33px;
+  width: 47px;
+  height: 47px;
   opacity: 0.7;
 }
-body .profile-socials .linkedIn {
+body .profile-socials .linkedIn,
+body .profile-socials .facebook {
   width: 35px;
   height: 35px;
 }
