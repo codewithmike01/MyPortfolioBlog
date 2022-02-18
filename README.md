@@ -1,6 +1,6 @@
 # MyPortfolioBlog
 
-This is my personal portfolio Website, which is a work in progress. <br >
+This is my personal portfolio Website, which is a work in progress. <br > <br > <br >
 ![portfolio](https://user-images.githubusercontent.com/58771507/154757247-7474e5eb-216e-4307-b8cd-181a0a9cf0a8.PNG)
 <br > <br >
 ## Live Preview
