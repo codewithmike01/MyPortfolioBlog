@@ -218,6 +218,12 @@
           li a:hover {
             text-decoration-color: #fff;
           }
+
+          .active-line {
+            text-decoration: underline;
+            text-decoration-style: double;
+            text-decoration-thickness: 4px;
+          }
         }
       }
 

@@ -52,6 +52,7 @@ main {
   }
 
   section.resume {
+    margin-top: 2.5em;
     .resume-details {
       p {
         line-height: $line-height;
@@ -177,6 +178,7 @@ main {
   }
 
   section.project {
+    margin-top: 2.5em;
     .project-heading {
       margin-bottom: 45px;
     }

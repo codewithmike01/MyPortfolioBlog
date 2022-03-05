@@ -3,6 +3,7 @@ body {
   font-size: 1.2rem;
   background-color: #fff;
   font-family: $default-font;
+  scroll-behavior: smooth;
 
   p {
     line-height: 32px;

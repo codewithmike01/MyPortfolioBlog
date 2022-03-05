@@ -1,0 +1,18 @@
+.h2-animate {
+  opacity: 0;
+}
+
+.active {
+  animation: fade 2s ease;
+  opacity: 1;
+}
+
+@keyframes fade {
+  from {
+    transform: scale(0, 2.5);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}

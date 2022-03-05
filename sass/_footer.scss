@@ -108,3 +108,17 @@ footer {
     font-size: 0.8em;
   }
 }
+
+.to-top-icon {
+  position: fixed;
+  top: 80%;
+  right: 0;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.to-top-icon img {
+  height: 3em;
+  width: 3em;
+  transform: rotate(-45deg);
+}
