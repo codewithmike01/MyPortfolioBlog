@@ -3,7 +3,6 @@ body {
   font-size: 1.2rem;
   background-color: #fff;
   font-family: $default-font;
-  scroll-behavior: smooth;
 
   p {
     line-height: 32px;
@@ -150,7 +149,7 @@ body {
   .profile-socials {
     display: flex;
     align-items: center;
-    margin-top: 43px;
+    margin-top: 25px;
     gap: 18px;
 
     img {

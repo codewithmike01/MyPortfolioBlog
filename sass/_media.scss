@@ -204,10 +204,25 @@
           display: none;
         }
 
+        .nav-fixed {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          background-color: lighten($color: $primary-color, $amount: 8);
+          position: fixed;
+          top: 0;
+          right: 0;
+          padding: 1.5em 0;
+          z-index: 5;
+        }
+
         ul {
           display: flex;
           flex-direction: row;
           margin-top: 0;
+          width: 90%;
+          margin: 0 auto;
 
           li a {
             font-weight: bolder;

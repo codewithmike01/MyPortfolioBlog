@@ -9,6 +9,7 @@
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 section.post button, footer form button, main section.project .project-btn, main section.intro button {
@@ -24,7 +25,6 @@ body {
   font-size: 1.2rem;
   background-color: #fff;
   font-family: "Roboto Mono", monospace;
-  scroll-behavior: smooth;
 }
 body p {
   line-height: 32px;
@@ -153,7 +153,7 @@ body .profile-info .profile-answer li {
 body .profile-socials {
   display: flex;
   align-items: center;
-  margin-top: 43px;
+  margin-top: 25px;
   gap: 18px;
 }
 body .profile-socials img {
@@ -198,6 +198,7 @@ main p {
   line-height: 32px;
 }
 main section.intro {
+  margin-top: 3.6em;
   position: relative;
 }
 main section.intro button {
@@ -322,7 +323,7 @@ main section.resume div.general-skill .skills .skill-name {
   margin-bottom: 9px;
 }
 main section.project {
-  margin-top: 2.5em;
+  margin-top: -4.5em;
 }
 main section.project .project-heading {
   margin-bottom: 45px;
@@ -473,24 +474,63 @@ footer .copyrights {
   font-size: 0.8em;
 }
 
-.to-top-icon {
+.to-top-icon,
+.theme-icon {
   position: fixed;
-  top: 80%;
-  right: 0;
+  top: 60%;
+  right: 6px;
   z-index: 5;
   cursor: pointer;
 }
 
-.to-top-icon img {
-  height: 3em;
-  width: 3em;
+.to-top-icon img,
+.theme-icon img {
+  height: 2.6em;
+  width: 2.6em;
   transform: rotate(-45deg);
+  opacity: 0.7;
+}
+
+.to-top-icon img:hover,
+.theme-icon img:hover {
+  opacity: 1;
+}
+
+.theme-icon {
+  top: 80%;
+  padding: 5px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+.theme-icon .theme-control {
+  position: relative;
+  right: -5em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  outline: none;
+}
+.theme-icon .theme-control .gear {
+  outline: none;
+}
+.theme-icon .theme-control span {
+  height: 40px;
+  width: 40px;
+  outline: none;
+}
+.theme-icon .theme-control span:nth-child(even) {
+  background-color: #6d56c1;
+}
+.theme-icon .theme-control span:nth-child(odd) {
+  background-color: #4a4a4a;
 }
 
 section.testimony {
   padding: 0 12px;
   margin-top: 120px;
-  margin-bottom: 160px;
+  margin-bottom: 60px;
   padding: 15px 30px;
   background-color: #6d56c1;
   background-image: url(.././images/testimonybg.jpg);
@@ -725,8 +765,60 @@ section.post button a {
 }
 
 .active {
-  animation: fade 2s ease;
+  animation: fade 1s ease;
   opacity: 1;
+}
+
+.theme-icon .theme-control.active {
+  animation: rollOut 1s ease-in-out forwards;
+}
+@keyframes rollOut {
+  0% {
+    right: -5em;
+  }
+  25% {
+    right: -4em;
+  }
+  50% {
+    right: -3em;
+  }
+  75% {
+    right: -2em;
+  }
+  100% {
+    right: -0.2em;
+  }
+}
+.theme-icon .theme-control.deactivate {
+  animation: rollIn 1s ease-in-out forwards;
+}
+@keyframes rollIn {
+  0% {
+    right: -0.2em;
+  }
+  25% {
+    right: -2em;
+  }
+  50% {
+    right: -3em;
+  }
+  75% {
+    right: -4em;
+  }
+  100% {
+    right: -5em;
+  }
+}
+.theme-icon .gear.active {
+  animation: rollAround 2s ease-in-out;
+}
+@keyframes rollAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes fade {
@@ -912,10 +1004,24 @@ section.post button a {
   body nav .hide #nav-close {
     display: none;
   }
+  body nav .hide .nav-fixed {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #8774cc;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1.5em 0;
+    z-index: 5;
+  }
   body nav .hide ul {
     display: flex;
     flex-direction: row;
     margin-top: 0;
+    width: 90%;
+    margin: 0 auto;
   }
   body nav .hide ul li a {
     font-weight: bolder;

@@ -27,16 +27,19 @@
           </div>
           <div class="mobile-menu hide">
             <div><span id="nav-close">&times</span></div>
-            <ul class="page-link">
-              <li class="active-line"><a href="#hi">HI-THERE!</a></li>
-              <li><a href="#resume">RESUME</a></li>
-              <li><a href="#portfolio">PORTFOLIO</a></li>
-              <li><a href="#testimonials">TESTIMONIALS</a></li>
-              <li><a href="#blog">BLOG</a></li>
-              <li><a href="#contact">CONTACT</a></li>
-            </ul>
+            <div class="nav-fixed">
+              <ul class="page-link">
+                <li class="active-line"><a href="#hi">HI-THERE!</a></li>
+                <li><a href="#resume">RESUME</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#testimonials">TESTIMONIALS</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
+            </div>
           </div>
         </nav>
+
         <div class="profile" id="#hi">
           <div class="my-img">
             <img src="./images/profilePicture.jpg" alt="My profile Picture" />
@@ -51,7 +54,7 @@
                 I am a Web developer able to build a Web presence from the
                 ground up - from concept, navigation, layout and programming to
                 UX and SEO.<br />
-                <span><a href="#">Know More...</a></span>
+                <span><a href="#hi">Know More...</a></span>
               </p>
             </div>
             <ul class="profile-socials">
@@ -85,7 +88,8 @@
     </header>
 
     <main>
-      <!-- Projects -->
+      <!-- Pro jects -->
+      <section id="portfolio"></section>
       <section class="project" id="portfolio">
         <div class="project-heading">
           <h2 class="active">My projects_</h2>
@@ -94,6 +98,7 @@
         <!-- Dynamic Project Render -->
       </section>
 
+      <section id="resume"></section>
       <section class="resume" id="resume">
         <hr />
         <h2 class="h2-animate">Resume_</h2>
@@ -153,7 +158,8 @@
       <hr />
 
       <!-- KNow More -->
-      <section class="intro">
+      <section id="hi"></section>
+      <section class="intro" id="hi">
         <h2 class="h2-animate">Hi_</h2>
         <div class="intro-details">
           <p class="intro">
@@ -174,6 +180,7 @@
     </main>
 
     <!-- Testimony -->
+    <section id="testimonials"></section>
     <section class="testimony" id="testimonials">
       <div class="circle"><p class="quote">&rdquo;</p></div>
       <div class="testimonyBg"></div>
@@ -256,6 +263,7 @@
     </section>
 
     <!-- Lastest Post -->
+    <section id="blog"></section>
     <section class="post" id="blog">
       <div class="post-inner-container">
         <div class="post-heading">
@@ -328,14 +336,25 @@
         </div>
       </div>
     </section>
+    <!-- Fixed to Move Top of page -->
     <div class="to-top-icon">
-      <h4 class="top-control">
+      <div class="top-control">
         <a href="#top">
           <img src="./images/to-top.png" alt="rocket top page" />
         </a>
-      </h4>
+      </div>
+    </div>
+
+    <!-- Fixed to change theme -->
+    <div class="theme-icon">
+      <div class="theme-control">
+        <img src="./images/gear.png" alt="rocket top page" class="gear" />
+        <span class="primary-color"></span>
+        <span class="secondary-color"></span>
+      </div>
     </div>
     <!-- Footer -->
+    <section id="contact"></section>
     <footer>
       <div class="innerfoot" id="contact"></div>
       <h2 class="h2-animate">Get in touch_</h2>

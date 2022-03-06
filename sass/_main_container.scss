@@ -28,6 +28,7 @@ main {
   }
 
   section.intro {
+    margin-top: 3.6em;
     position: relative;
     button {
       @extend %btn;
@@ -178,7 +179,7 @@ main {
   }
 
   section.project {
-    margin-top: 2.5em;
+    margin-top: -4.5em;
     .project-heading {
       margin-bottom: 45px;
     }
