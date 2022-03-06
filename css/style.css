@@ -22,7 +22,6 @@ section.post button, footer form button, main section.project .project-btn, main
 
 body {
   position: relative;
-  font-size: 1.2rem;
   background-color: #fff;
   font-family: "Roboto Mono", monospace;
 }
@@ -263,7 +262,7 @@ main section.resume div.education div.education-details {
   gap: 15px;
 }
 main section.resume div.education div.education-details .education-answer {
-  margin-top: -3.3em;
+  margin-top: -4em;
   display: flex;
   flex-direction: column;
   gap: 1.2em;
@@ -272,7 +271,7 @@ main section.resume div.education div.education-details .education-answer p {
   word-spacing: 0;
 }
 main section.resume div.education div.education-details .education-answer li:nth-child(even) {
-  margin-top: 0;
+  margin-top: 1px;
   margin-bottom: -19px;
 }
 main section.resume div.education div.education-details .education-answer div {
@@ -519,7 +518,7 @@ footer .copyrights {
 }
 .theme-icon .theme-control {
   position: relative;
-  right: -5em;
+  right: -6em;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -799,7 +798,7 @@ section.post button a {
     right: -2em;
   }
   100% {
-    right: -0.2em;
+    right: -0.5em;
   }
 }
 .theme-icon .theme-control.deactivate {
@@ -807,7 +806,7 @@ section.post button a {
 }
 @keyframes rollIn {
   0% {
-    right: -0.2em;
+    right: 0.5em;
   }
   25% {
     right: -2em;
@@ -819,7 +818,7 @@ section.post button a {
     right: -4em;
   }
   100% {
-    right: -5em;
+    right: -6em;
   }
 }
 .theme-icon .gear.active {
@@ -883,7 +882,7 @@ section.post button a {
   }
 
   .education-answer li:nth-child(3n) {
-    margin-top: 1.3em;
+    margin-top: 1.7em;
   }
 
   button {
