@@ -112,10 +112,25 @@ footer {
 .to-top-icon,
 .theme-icon {
   position: fixed;
-  top: 60%;
   right: 6px;
   z-index: 5;
   cursor: pointer;
+}
+
+.to-top-icon {
+  display: none;
+  top: 60%;
+  animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  from {
+    top: 61%;
+  }
+
+  to {
+    top: 60%;
+  }
 }
 
 .to-top-icon img,

@@ -1,4 +1,5 @@
 import './mobileMenu.js';
-import './animate.js';
+import './animateOnScroll.js';
 import './skillsRender.js';
+import './themeSlide.js';
 import './projectRender.js';

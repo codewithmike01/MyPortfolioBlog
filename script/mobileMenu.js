@@ -19,10 +19,12 @@ function clickMenu() {
 }
 
 const isActive = (li) => {
-  return li.classList.value === 'active-line';
+  return li.classList.value.includes('active-line');
 };
 
-const showActiveLine = (liElement) => {
+export const showActiveLine = (liElement) => {
+  const parent = liElement.parentElement;
+  parent.querySelector('.active-line').classList.remove('active-line');
   liElement.classList.add('active-line');
 };
 
@@ -34,8 +36,6 @@ pageLink.forEach((li) => {
   li.addEventListener('click', () => {
     clickMenu();
     if (!isActive(li)) {
-      const parent = li.parentElement;
-      parent.querySelector('.active-line').classList.remove('active-line');
       showActiveLine(li);
     }
   });
