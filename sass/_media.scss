@@ -1,5 +1,14 @@
 // MEADIA QUERY
 
+/* SMALL MOBILE*/
+@media (min-width: 399px) {
+  section.testimony {
+    .circle {
+      left: 14%;
+    }
+  }
+}
+
 /* MOBILE*/
 @media (min-width: 447px) {
   main,
@@ -17,6 +26,10 @@
   }
 
   section.testimony {
+    .circle {
+      left: 20%;
+    }
+
     .test-container {
       .carousel-conatiner {
         .carousel-circle {
@@ -38,11 +51,17 @@
   }
 
   .education-answer li:nth-child(3n) {
-    margin-top: 1.3em;
+    margin-top: 1.7em;
   }
 
   button {
     max-width: 210px;
+  }
+
+  section.testimony {
+    .circle {
+      left: 30%;
+    }
   }
 }
 
@@ -110,6 +129,12 @@
       }
     }
   }
+
+  section.testimony {
+    .circle {
+      left: 35%;
+    }
+  }
 }
 
 /* TABLET */
@@ -126,18 +151,19 @@
   body {
     .my-img {
       display: flex;
-      width: 45%;
+      width: 70%;
     }
   }
 
   .my-img img {
     display: flex;
-    width: 80%;
-    height: calc(100% + 80px);
+    width: 100%;
+    height: calc(100% + 85px);
   }
 
   .profile {
     display: flex;
+    gap: 25px;
   }
 
   .intro {
@@ -145,6 +171,11 @@
 
     .intro-details p {
       margin-top: 25px;
+    }
+  }
+  section.testimony {
+    .circle {
+      left: 40%;
     }
   }
 }
@@ -173,10 +204,25 @@
           display: none;
         }
 
+        .nav-fixed {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          background-color: lighten($color: $primary-color, $amount: 8);
+          position: fixed;
+          top: 0;
+          right: 0;
+          padding: 1.5em 0;
+          z-index: 5;
+        }
+
         ul {
           display: flex;
           flex-direction: row;
           margin-top: 0;
+          width: 90%;
+          margin: 0 auto;
 
           li a {
             font-weight: bolder;
@@ -186,6 +232,12 @@
 
           li a:hover {
             text-decoration-color: #fff;
+          }
+
+          .active-line {
+            text-decoration: underline;
+            text-decoration-style: double;
+            text-decoration-thickness: 4px;
           }
         }
       }
@@ -206,6 +258,10 @@
   }
 
   section.testimony {
+    .circle {
+      left: 39%;
+    }
+
     .test-container {
       .carousel-conatiner {
         .carousel-content {

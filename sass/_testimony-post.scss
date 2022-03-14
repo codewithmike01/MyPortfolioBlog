@@ -1,7 +1,7 @@
 section.testimony {
   padding: 0 $padding-content-x;
   margin-top: 120px;
-  margin-bottom: 160px;
+  margin-bottom: 60px;
   padding: 15px 30px;
   background-color: $primary-color;
   background-image: url(.././images/testimonybg.jpg);
@@ -17,7 +17,7 @@ section.testimony {
     width: 100px;
     top: -55px;
     background-color: #fff;
-    transform: translateX(99%);
+    transform: translateX(70%);
     border-radius: 50%;
 
     .quote {
@@ -168,6 +168,7 @@ section.testimony {
 
 // POST
 section.post {
+  border: 2px solid transparent;
   padding: 0 $padding-content-x;
   padding-bottom: 50px;
 

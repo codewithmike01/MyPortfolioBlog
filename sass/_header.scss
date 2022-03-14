@@ -1,6 +1,5 @@
 body {
   position: relative;
-  font-size: 1.2rem;
   background-color: #fff;
   font-family: $default-font;
 
@@ -9,6 +8,7 @@ body {
   }
 
   header {
+    margin-bottom: 120px;
     position: relative;
     width: 100%;
     height: 600px;
@@ -116,11 +116,14 @@ body {
   }
 
   .profile-info {
-    margin-top: 30px;
+    margin-top: 25px;
     display: flex;
     gap: 5px;
 
     .profile-intro {
+      line-height: 35px;
+      word-spacing: $word-space;
+
       span {
         a {
           color: #fff;
@@ -144,16 +147,18 @@ body {
 
   .profile-socials {
     display: flex;
-    margin-top: 43px;
-    gap: 15px;
+    align-items: center;
+    margin-top: 25px;
+    gap: 18px;
 
     img {
-      width: 33px;
-      height: 33px;
+      width: 47px;
+      height: 47px;
       opacity: 0.7;
     }
 
-    .linkedIn {
+    .linkedIn,
+    .facebook {
       width: 35px;
       height: 35px;
     }
