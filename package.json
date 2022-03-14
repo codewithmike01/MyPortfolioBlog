@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Ginohmk/MyPortfolioBlog/issues"
   },
-  "homepage": "https://github.com/Ginohmk/MyPortfolioBlog#readme"
+  "homepage": "https://github.com/Ginohmk/MyPortfolioBlog#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }

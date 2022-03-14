@@ -9,6 +9,7 @@
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 section.post button, footer form button, main section.project .project-btn, main section.intro button {
@@ -21,7 +22,6 @@ section.post button, footer form button, main section.project .project-btn, main
 
 body {
   position: relative;
-  font-size: 1.2rem;
   background-color: #fff;
   font-family: "Roboto Mono", monospace;
 }
@@ -29,6 +29,7 @@ body p {
   line-height: 32px;
 }
 body header {
+  margin-bottom: 120px;
   position: relative;
   width: 100%;
   height: 600px;
@@ -126,9 +127,13 @@ body .profile .name-job p {
   font-size: 0.9em;
 }
 body .profile-info {
-  margin-top: 30px;
+  margin-top: 25px;
   display: flex;
   gap: 5px;
+}
+body .profile-info .profile-intro {
+  line-height: 35px;
+  word-spacing: 0.4em;
 }
 body .profile-info .profile-intro span a {
   color: #fff;
@@ -146,15 +151,17 @@ body .profile-info .profile-answer li {
 }
 body .profile-socials {
   display: flex;
-  margin-top: 43px;
-  gap: 15px;
+  align-items: center;
+  margin-top: 25px;
+  gap: 18px;
 }
 body .profile-socials img {
-  width: 33px;
-  height: 33px;
+  width: 47px;
+  height: 47px;
   opacity: 0.7;
 }
-body .profile-socials .linkedIn {
+body .profile-socials .linkedIn,
+body .profile-socials .facebook {
   width: 35px;
   height: 35px;
 }
@@ -190,6 +197,7 @@ main p {
   line-height: 32px;
 }
 main section.intro {
+  margin-top: 3.6em;
   position: relative;
 }
 main section.intro button {
@@ -209,6 +217,13 @@ main section.intro button a {
   text-align: center;
   gap: 7px;
   font-size: 1.2em;
+}
+main section.resume {
+  margin-top: 2.5em;
+}
+main section.resume .resume-details p {
+  line-height: 37px;
+  word-spacing: 0.4em;
 }
 main section.resume li {
   list-style-type: none;
@@ -247,14 +262,17 @@ main section.resume div.education div.education-details {
   gap: 15px;
 }
 main section.resume div.education div.education-details .education-answer {
-  margin-top: -3.3em;
+  margin-top: -4em;
   display: flex;
   flex-direction: column;
   gap: 1.2em;
 }
+main section.resume div.education div.education-details .education-answer p {
+  word-spacing: 0;
+}
 main section.resume div.education div.education-details .education-answer li:nth-child(even) {
-  margin-top: 10px;
-  margin-bottom: -10px;
+  margin-top: 1px;
+  margin-bottom: -19px;
 }
 main section.resume div.education div.education-details .education-answer div {
   display: flex;
@@ -303,7 +321,10 @@ main section.resume div.general-skill .skills .skill-name {
   display: flex;
   margin-bottom: 9px;
 }
-main section.project .project-heading {
+main section.project {
+  margin-top: -4.5em;
+}
+main section.project h2 {
   margin-bottom: 45px;
 }
 main section.project .card-project {
@@ -324,6 +345,10 @@ main section.project .card-project img {
 }
 main section.project .card-project .project-details {
   padding: 0 0.7em;
+}
+main section.project .card-project .project-details p {
+  line-height: 37px;
+  word-spacing: 0.4em;
 }
 main section.project .card-project ul {
   margin-top: 25px;
@@ -448,10 +473,76 @@ footer .copyrights {
   font-size: 0.8em;
 }
 
+.to-top-icon,
+.theme-icon {
+  position: fixed;
+  right: 6px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.to-top-icon {
+  display: none;
+  top: 60%;
+  animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  from {
+    top: 61%;
+  }
+  to {
+    top: 60%;
+  }
+}
+.to-top-icon img,
+.theme-icon img {
+  height: 2.6em;
+  width: 2.6em;
+  transform: rotate(-45deg);
+  opacity: 0.7;
+}
+
+.to-top-icon img:hover,
+.theme-icon img:hover {
+  opacity: 1;
+}
+
+.theme-icon {
+  top: 80%;
+  padding: 5px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+.theme-icon .theme-control {
+  position: relative;
+  right: -6em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  outline: none;
+}
+.theme-icon .theme-control .gear {
+  outline: none;
+}
+.theme-icon .theme-control span {
+  height: 40px;
+  width: 40px;
+  outline: none;
+}
+.theme-icon .theme-control span:nth-child(even) {
+  background-color: #6d56c1;
+}
+.theme-icon .theme-control span:nth-child(odd) {
+  background-color: #4a4a4a;
+}
+
 section.testimony {
   padding: 0 12px;
   margin-top: 120px;
-  margin-bottom: 160px;
+  margin-bottom: 60px;
   padding: 15px 30px;
   background-color: #6d56c1;
   background-image: url(.././images/testimonybg.jpg);
@@ -467,7 +558,7 @@ section.testimony .circle {
   width: 100px;
   top: -55px;
   background-color: #fff;
-  transform: translateX(99%);
+  transform: translateX(70%);
   border-radius: 50%;
 }
 section.testimony .circle .quote {
@@ -593,6 +684,7 @@ section.testimony .test-container .carousel-conatiner .carousel-circle .circle-f
 }
 
 section.post {
+  border: 2px solid transparent;
   padding: 0 12px;
   padding-bottom: 50px;
   margin-top: 90px;
@@ -680,6 +772,81 @@ section.post button a {
   font-size: 1.2em;
 }
 
+.h2-animate {
+  opacity: 0;
+}
+
+.active {
+  animation: fade 1s ease;
+  opacity: 1;
+}
+
+.theme-icon .theme-control.active {
+  animation: rollOut 1s ease-in-out forwards;
+}
+@keyframes rollOut {
+  0% {
+    right: -5em;
+  }
+  25% {
+    right: -4em;
+  }
+  50% {
+    right: -3em;
+  }
+  75% {
+    right: -2em;
+  }
+  100% {
+    right: -0.5em;
+  }
+}
+.theme-icon .theme-control.deactivate {
+  animation: rollIn 1s ease-in-out forwards;
+}
+@keyframes rollIn {
+  0% {
+    right: 0.5em;
+  }
+  25% {
+    right: -2em;
+  }
+  50% {
+    right: -3em;
+  }
+  75% {
+    right: -4em;
+  }
+  100% {
+    right: -6em;
+  }
+}
+.theme-icon .gear.active {
+  animation: rollAround 2s ease-in-out;
+}
+@keyframes rollAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade {
+  from {
+    transform: scale(0, 2.5);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+/* SMALL MOBILE*/
+@media (min-width: 399px) {
+  section.testimony .circle {
+    left: 14%;
+  }
+}
 /* MOBILE*/
 @media (min-width: 447px) {
   main,
@@ -697,6 +864,9 @@ section.post button a {
     transform: translateX(150%);
   }
 
+  section.testimony .circle {
+    left: 20%;
+  }
   section.testimony .test-container .carousel-conatiner .carousel-circle {
     margin-top: 8em;
   }
@@ -712,11 +882,15 @@ section.post button a {
   }
 
   .education-answer li:nth-child(3n) {
-    margin-top: 1.3em;
+    margin-top: 1.7em;
   }
 
   button {
     max-width: 210px;
+  }
+
+  section.testimony .circle {
+    left: 30%;
   }
 }
 /* TABLET */
@@ -777,6 +951,10 @@ section.post button a {
   footer .small-footer form .form-btn {
     max-width: 290px;
   }
+
+  section.testimony .circle {
+    left: 35%;
+  }
 }
 /* TABLET */
 @media (min-width: 989px) {
@@ -790,17 +968,18 @@ section.post button a {
 
   body .my-img {
     display: flex;
-    width: 45%;
+    width: 70%;
   }
 
   .my-img img {
     display: flex;
-    width: 80%;
-    height: calc(100% + 80px);
+    width: 100%;
+    height: calc(100% + 85px);
   }
 
   .profile {
     display: flex;
+    gap: 25px;
   }
 
   .intro {
@@ -808,6 +987,10 @@ section.post button a {
   }
   .intro .intro-details p {
     margin-top: 25px;
+  }
+
+  section.testimony .circle {
+    left: 40%;
   }
 }
 /* LAPTOP */
@@ -833,10 +1016,24 @@ section.post button a {
   body nav .hide #nav-close {
     display: none;
   }
+  body nav .hide .nav-fixed {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #8774cc;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1.5em 0;
+    z-index: 5;
+  }
   body nav .hide ul {
     display: flex;
     flex-direction: row;
     margin-top: 0;
+    width: 90%;
+    margin: 0 auto;
   }
   body nav .hide ul li a {
     font-weight: bolder;
@@ -845,6 +1042,11 @@ section.post button a {
   }
   body nav .hide ul li a:hover {
     text-decoration-color: #fff;
+  }
+  body nav .hide ul .active-line {
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-thickness: 4px;
   }
   body nav .mobile-menu {
     padding-top: 0;
@@ -859,6 +1061,9 @@ section.post button a {
     margin-top: 140px;
   }
 
+  section.testimony .circle {
+    left: 39%;
+  }
   section.testimony .test-container .carousel-conatiner .carousel-content .carousel-item {
     margin-left: -8.897em;
     padding-left: 20.875em;

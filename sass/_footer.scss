@@ -108,3 +108,76 @@ footer {
     font-size: 0.8em;
   }
 }
+
+.to-top-icon,
+.theme-icon {
+  position: fixed;
+  right: 6px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.to-top-icon {
+  display: none;
+  top: 60%;
+  animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  from {
+    top: 61%;
+  }
+
+  to {
+    top: 60%;
+  }
+}
+
+.to-top-icon img,
+.theme-icon img {
+  height: 2.6em;
+  width: 2.6em;
+  transform: rotate(-45deg);
+  opacity: 0.7;
+}
+
+.to-top-icon img:hover,
+.theme-icon img:hover {
+  opacity: 1;
+}
+
+.theme-icon {
+  top: 80%;
+  padding: 5px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  outline: none;
+
+  .theme-control {
+    position: relative;
+    right: -6em;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    outline: none;
+
+    .gear {
+      outline: none;
+    }
+
+    span {
+      height: 40px;
+      width: 40px;
+      outline: none;
+    }
+
+    span:nth-child(even) {
+      background-color: $primary-color;
+    }
+
+    span:nth-child(odd) {
+      background-color: $secondary-color;
+    }
+  }
+}

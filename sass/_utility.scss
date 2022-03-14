@@ -1,7 +1,9 @@
 $primary-text-color: #555;
 $secondary-color: #4a4a4a;
 $primary-color: #6d56c1;
-$font-change: #212529;
+$font-change: hsl(210, 11%, 15%);
+$word-space: 0.4em;
+$line-height: 37px;
 $padding-content-x: 12px;
 $default-font: 'Roboto Mono', monospace;
 $paragraph-font: 'Roboto', sans-serif;
@@ -20,6 +22,7 @@ $linear-background: linear-gradient(
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 %btn {

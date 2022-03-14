@@ -10,13 +10,13 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <script defer src="./script/main.js"></script>
+    <script type="module" defer src="./script/main.js"></script>
     <script defer src="./script/carousel.js"></script>
     <title>Mike's Portfolio/Blog</title>
   </head>
   <body>
     <!-- HEADER -->
-    <header>
+    <header id="top">
       <div class="bg"></div>
       <div class="header-inner-container">
         <nav>
@@ -27,45 +27,61 @@
           </div>
           <div class="mobile-menu hide">
             <div><span id="nav-close">&times</span></div>
-            <ul>
-              <li><a href="#">HI-THERE!</a></li>
-              <li><a href="#">RESUME</a></li>
-              <li><a href="#">PORTFOLIO</a></li>
-              <li><a href="#">TESTIMONIALS</a></li>
-              <li><a href="#">BLOG</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
+            <div class="nav-fixed">
+              <ul class="page-link">
+                <li class="link-one active-line">
+                  <a href="#portfolio">PORTFOLIO</a>
+                </li>
+                <li class="link-two"><a href="#resume">RESUME</a></li>
+                <li class="link-three"><a href="#hi">HI-THERE!</a></li>
+                <li class="link-four">
+                  <a href="#testimonials">TESTIMONIALS</a>
+                </li>
+                <li class="link-five"><a href="#blog">BLOG</a></li>
+                <li class="link-six"><a href="#contact">CONTACT</a></li>
+              </ul>
+            </div>
           </div>
         </nav>
-        <div class="profile">
+
+        <div class="profile" id="#hi">
           <div class="my-img">
             <img src="./images/profilePicture.jpg" alt="My profile Picture" />
           </div>
           <div class="pro-add">
             <div class="name-job">
               <h1 class="profile-name">Kanu Mike</h1>
-              <p>frontend developer</p>
+              <p>Frontend developer</p>
             </div>
             <div class="profile-info">
               <p class="profile-intro">
                 I am a Web developer able to build a Web presence from the
                 ground up - from concept, navigation, layout and programming to
                 UX and SEO.<br />
-                <span><a href="#">Know More...</a></span>
+                <span><a href="#hi">Know More...</a></span>
               </p>
             </div>
             <ul class="profile-socials">
               <li>
-                <a href="#"
-                  ><img src="./images/Github.png" alt="GitHub icon" />
+                <a href="https://github.com/Ginohmk"
+                  ><img src="./images/githubSocial.png" alt="GitHub icon" />
                 </a>
               </li>
               <li>
-                <a href="#"
+                <a href="https://www.linkedin.com/in/mike-kanu-dev/"
                   ><img
-                    src="./images/LinkedIn.png"
+                    src="./images/LinkedinSocial.png"
                     alt="LinkedIn icon"
                     class="linkedIn"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="https://m.facebook.com/mike.kanu"
+                  ><img
+                    src="./images/facebookSocial.png"
+                    alt="LinkedIn icon"
+                    class="facebook"
                   />
                 </a>
               </li>
@@ -77,41 +93,17 @@
 
     <main>
       <!-- Projects -->
+      <section id="portfolio"></section>
       <section class="project">
-        <div class="project-heading">
-          <h2>My projects_</h2>
-          <h4>ALL MOBILE APPS WEB-SITES & LANDING PAGES</h4>
-        </div>
+        <h2 class="h2-animate active">My projects_</h2>
 
-        <div class="card-project">
-          <div class="image-project">
-            <img src="./images/dashboard.png" alt="DashBoard" />
-          </div>
-          <div class="project-details">
-            <h2>MOBILE AND DESKTOP DASHBOARD FOR NIROBI NEWS REPORT</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              quod voluptatem cupiditate provident ullam tempora eos tempore!
-              Cumque nobis iusto pariatur aspernatur similique enim saepe
-              ratione, labore repellendus incidunt dolor?
-            </p>
-
-            <h4>USED STACK:</h4>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>SASS</li>
-              <li>JAVASCRIPT</li>
-            </ul>
-
-            <button type="button" class="project-btn">See details</button>
-          </div>
-        </div>
-        <hr />
+        <!-- Dynamic Project Render -->
       </section>
 
+      <section id="resume"></section>
       <section class="resume">
-        <h2>Resume_</h2>
+        <hr />
+        <h2 class="h2-animate">Resume_</h2>
         <div class="resume-details">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
@@ -134,7 +126,7 @@
                 <li>
                   <div>
                     <h4>MICROVERSE SCHOOL</h4>
-                    <p class="date">2021 - Till date</p>
+                    <p class="date">2021 - Present</p>
                   </div>
                   <p class="degree">Full-stack Web Developer</p>
                 </li>
@@ -160,98 +152,17 @@
         <div class="general-skill">
           <h3>GENERAL SKILLS</h3>
           <div class="skills">
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>GIT</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/gitSkill.png" alt="" />
-              </div>
-            </div>
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>GITHUB</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/githubSkill.png" alt="" />
-              </div>
-            </div>
-
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>HTML5</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/html5Skill.png" alt="" />
-              </div>
-            </div>
-
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>CSS3</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/css3Skills.png" alt="" />
-              </div>
-            </div>
-
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>JAVASCRIPT</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/jsSkill.png" alt="" />
-              </div>
-            </div>
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>JEST</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/jestSkill.png" alt="" />
-              </div>
-            </div>
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>WEBPACK</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/webpackSkill.png" alt="" />
-              </div>
-            </div>
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>SASS</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/sassSkill.png" alt="" />
-              </div>
-            </div>
-
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>BOOTSTRAP</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/bootstrapSkill.png" alt="" />
-              </div>
-            </div>
-            <div class="skill-details">
-              <div class="skill-name">
-                <h4>PHOTOSHOP</h4>
-              </div>
-              <div class="imageSkill">
-                <img src="./images/photoshopSkill.png" alt="" />
-              </div>
-            </div>
+            <!-- Dynamic Skills Rendering -->
           </div>
         </div>
       </section>
 
       <hr />
 
+      <!-- KNow More -->
+      <section id="hi"></section>
       <section class="intro">
-        <h2>Hi_</h2>
+        <h2 class="h2-animate">Hi_</h2>
         <div class="intro-details">
           <p class="intro">
             I am skilled at writing well-designed, testable and efficient code
@@ -261,7 +172,7 @@
           </p>
 
           <button>
-            <a href="#" target="_blank">
+            <a href="./images/01. Kanu-Mike.pdf" target="_blank" download>
               <img src="./images/downloadIcon.svg" alt="" /> DOWNLOAD CV</a
             >
           </button>
@@ -271,6 +182,7 @@
     </main>
 
     <!-- Testimony -->
+    <section id="testimonials"></section>
     <section class="testimony">
       <div class="circle"><p class="quote">&rdquo;</p></div>
       <div class="testimonyBg"></div>
@@ -353,14 +265,15 @@
     </section>
 
     <!-- Lastest Post -->
+    <section id="blog"></section>
     <section class="post">
       <div class="post-inner-container">
         <div class="post-heading">
-          <h2>Latest Posts_</h2>
+          <h2 class="h2-animate">Latest Posts_</h2>
         </div>
 
         <div class="flex-post">
-          <!-- POst One -->
+          <!-- Post One -->
           <div class="card-post">
             <div class="image-post">
               <img src="./images/csspreprocessor.jpg" alt="DashBoard" />
@@ -425,14 +338,31 @@
         </div>
       </div>
     </section>
+    <!-- Fixed to Move Top of page -->
+    <div class="to-top-icon">
+      <div class="top-control">
+        <a href="#top">
+          <img src="./images/to-top.png" alt="rocket top page" class="bounce" />
+        </a>
+      </div>
+    </div>
 
+    <!-- Fixed to change theme -->
+    <div class="theme-icon">
+      <div class="theme-control">
+        <img src="./images/gear.png" alt="rocket top page" class="gear" />
+        <span class="primary-color"></span>
+        <span class="secondary-color"></span>
+      </div>
+    </div>
     <!-- Footer -->
+    <section id="contact"></section>
     <footer>
       <div class="innerfoot"></div>
-      <h2>Get in touch_</h2>
+      <h2 class="h2-animate">Get in touch_</h2>
       <div class="small-footer">
         <div class="form-h2">
-          <form action="#">
+          <form action="https://formspree.io/f/moqrqvny" method="POST">
             <input
               type="text"
               name="userName"
