@@ -136,7 +136,10 @@ body .profile-info .profile-intro {
   word-spacing: 0.4em;
 }
 body .profile-info .profile-intro span a {
-  color: #fff;
+  color: #6d56c1;
+  border-radius: 8px;
+  padding: 5px 8px;
+  background-color: #fff;
 }
 body .profile-info ul {
   display: flex;
@@ -159,6 +162,7 @@ body .profile-socials img {
   width: 47px;
   height: 47px;
   opacity: 0.7;
+  filter: invert(75%);
 }
 body .profile-socials .linkedIn,
 body .profile-socials .facebook {
@@ -841,6 +845,91 @@ section.post button a {
     transform: scale(1, 1);
   }
 }
+.pop-details-container {
+  animation: popIn 1s ease-in-out;
+}
+
+@keyframes popIn {
+  from {
+    transform: rotate(180deg) scale(0.3);
+  }
+  to {
+    transform: rotate() scale(1);
+  }
+}
+.pop-is-hide {
+  display: none;
+  transition: display 3s ease-in;
+}
+
+.pop-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 6;
+}
+.pop-container .pop-details-container {
+  padding-bottom: 30px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #6d56c1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 1024px;
+}
+.pop-container .pop-details-container .video {
+  width: 80%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.pop-container .pop-details-container .video video {
+  width: 100%;
+}
+.pop-container .pop-details-container .cancel-pop {
+  position: relative;
+  left: 93%;
+  font-size: 1.9em;
+  cursor: pointer;
+}
+.pop-container .pop-details-container h4 {
+  padding: 10px 0;
+  word-break: break-all;
+  text-align: center;
+  text-transform: uppercase;
+}
+.pop-container .pop-details-container .button-container {
+  position: relative;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  justify-content: center;
+}
+.pop-container .pop-details-container .button-container button {
+  background-color: #6d56c1;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 3px 1px gray;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 1s ease-in-out;
+}
+.pop-container .pop-details-container .button-container button:hover {
+  transform: scale(1.1);
+}
+
 /* SMALL MOBILE*/
 @media (min-width: 399px) {
   section.testimony .circle {
