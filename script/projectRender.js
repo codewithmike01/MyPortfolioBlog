@@ -2,14 +2,13 @@ const projectContainer = document.querySelector('.project');
 const projectPopContainer = document.querySelector('.pop-container');
 const project = [
   {
-    title: 'MOBILE AND DESKTOP DASHBOARD FOR NIROBI NEWS REPORT',
-    imageUrl: './images/dashboard.png',
-    summary: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
-    quaerat eos enim mollitia possimus. Incidunt repellendus blanditiis
-    quia vitae earum! Quam ullam cupiditate porro, tempora reiciendis
-    cumque optio. Doloribus laboriosam cupiditate ab neque voluptatibus
-    placeat assumenda molestias asperiores quidem perferendis`,
-    stack: ['HTML', 'CSS', 'SASS', 'JAVASCRIPT'],
+    title: 'AIR POLLUTION TRACKING MOBILE APP',
+    imageUrl: './images/airpollutionpreview.png',
+    summary: `This is an Air Pollution tracking App, Which showcases the air pollution density in a particular country, where you can search for countries based on their region, and also you can view the air pollution density of a country, through the use of a circular chart.<br/>
+    - This project is a capstone project for Microverse remote school.<br/>
+    - I worked with two APIs, which are the Rest country API and the Air pollution API.<br/>
+    - I did testing on the app using react testing library, jest, and renderer for snapshots.`,
+    stack: ['REACT', 'REDUX', 'JEST', 'RENDERER'],
     id: 1,
   },
 ];
@@ -17,22 +16,9 @@ const project = [
 const projectDetails = [
   {
     id: 1,
-    title: 'MOBILE AND DESKTOP DASHBOARD FOR NIROBI NEWS REPORT',
-    videoLink: './video/airpollution.mp4',
+    title: 'AIR POLLUTION TRACKING MOBILE APP',
+    videoLink: 'https://youtu.be/zCGXkCrBBEQ',
     liveLink: 'https://github.com/Ginohmk/track-air-polluton-app.git',
-  },
-
-  {
-    id: 2,
-    title: 'MOBILE Tech',
-    videoLink: 'heetps://google.com',
-    liveLink: 'heytt/live',
-  },
-
-  {
-    id: 3,
-    videoLink: 'heetps://google.com',
-    liveLink: 'heytt/live',
   },
 ];
 
@@ -76,12 +62,10 @@ const renderPopup = (id) => {
       const popHtml = `<div class="pop-details-container">
         <span class="cancel-pop">&times;</span>
         <h4>${item.title}</h4>
-        <div class='video'>
-        <video src="${item.videoLink}" controls >
-       
-        </video>
-        </div>
         <div class="button-container">
+          <a href="${item.videoLink}" target="_blank">
+            <button>See video explanation</button>
+          </a>
           <a href="${item.liveLink}" target="_blank">
             <button>See code base</button>
           </a>

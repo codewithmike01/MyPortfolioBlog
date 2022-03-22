@@ -13,6 +13,7 @@
   z-index: 6;
 
   .pop-details-container {
+    padding: 0 10px;
     padding-bottom: 30px;
     border-radius: 8px;
     background-color: #fff;
@@ -24,14 +25,6 @@
     width: 80%;
     max-width: 1024px;
 
-    .video {
-      width: 80%;
-      max-width: 640px;
-      margin: 0 auto;
-      video {
-        width: 100%;
-      }
-    }
     .cancel-pop {
       position: relative;
       left: 93%;

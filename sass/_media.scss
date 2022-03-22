@@ -81,11 +81,20 @@
 
   .card-project {
     display: flex;
-    gap: 20px;
+    gap: 10px;
+
+    .project-details {
+      width: 100%;
+    }
+
+    .image-project {
+      width: 60%;
+      display: flex;
+      align-items: center;
+    }
 
     img {
-      width: 100%;
-      height: calc(100%);
+      height: calc(70%);
       object-fit: cover;
     }
   }

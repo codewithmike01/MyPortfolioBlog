@@ -872,6 +872,7 @@ section.post button a {
   z-index: 6;
 }
 .pop-container .pop-details-container {
+  padding: 0 10px;
   padding-bottom: 30px;
   border-radius: 8px;
   background-color: #fff;
@@ -882,14 +883,6 @@ section.post button a {
   transform: translate(-50%, -50%);
   width: 80%;
   max-width: 1024px;
-}
-.pop-container .pop-details-container .video {
-  width: 80%;
-  max-width: 640px;
-  margin: 0 auto;
-}
-.pop-container .pop-details-container .video video {
-  width: 100%;
 }
 .pop-container .pop-details-container .cancel-pop {
   position: relative;
@@ -998,11 +991,18 @@ section.post button a {
 
   .card-project {
     display: flex;
-    gap: 20px;
+    gap: 10px;
+  }
+  .card-project .project-details {
+    width: 100%;
+  }
+  .card-project .image-project {
+    width: 60%;
+    display: flex;
+    align-items: center;
   }
   .card-project img {
-    width: 100%;
-    height: 100%;
+    height: 70%;
     object-fit: cover;
   }
 
