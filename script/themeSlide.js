@@ -1,4 +1,7 @@
 const gear = document.querySelector('.gear');
+let body_class = document.querySelector('body');
+let primary_color = gear.nextElementSibling;
+let secondary_color = primary_color.nextElementSibling;
 
 // Animate Theme Change
 const showThemeSlide = (parent) => {
@@ -29,4 +32,13 @@ gear.parentNode.querySelectorAll('span').forEach((span) => {
   span.addEventListener('click', () => {
     removeThemeSlide(gear.parentNode);
   });
+});
+
+// Theme color changing
+primary_color.addEventListener('click', () => {
+  body_class.classList = 'theme-1';
+});
+
+secondary_color.addEventListener('click', () => {
+  body_class.classList = 'theme-2';
 });

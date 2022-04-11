@@ -27,7 +27,6 @@ body {
   }
 
   header::before {
-    background: $linear-background;
     height: 100%;
     top: 0;
     left: 0;
@@ -126,7 +125,6 @@ body {
 
       span {
         a {
-          color: $primary-color;
           border-radius: 8px;
           padding: 5px 8px;
           background-color: #fff;

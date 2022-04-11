@@ -32,7 +32,6 @@ main {
     position: relative;
     button {
       @extend %btn;
-      background-color: $primary-color;
       border: none;
       width: 60%;
       margin: 30px 0 65px 5px;
@@ -79,7 +78,6 @@ main {
         height: 12px;
         width: 12px;
         border-radius: 25px;
-        border: 2px solid $primary-color;
         position: relative;
         left: 0;
       }
@@ -89,7 +87,6 @@ main {
         display: block;
         height: 190px;
         width: 2px;
-        border: 1px solid $primary-color;
         position: relative;
         top: -6px;
         left: 6px;
@@ -135,7 +132,6 @@ main {
             gap: 20px;
 
             h4 {
-              color: $primary-color;
               font-size: 1em;
             }
 
@@ -227,9 +223,8 @@ main {
         }
       }
     }
-    .project-btn {
+    button {
       @extend %btn;
-      background-color: $primary-color;
       font-size: 0.9em;
       border: none;
       width: 68%;

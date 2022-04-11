@@ -75,6 +75,12 @@
     max-width: 799px;
   }
 
+  .mobile-menu {
+    ul {
+      max-width: 799px;
+    }
+  }
+
   .skills {
     justify-content: center;
   }
@@ -157,6 +163,12 @@
     max-width: 900px;
   }
 
+  .mobile-menu {
+    ul {
+      max-width: 900px;
+    }
+  }
+
   body {
     .my-img {
       display: flex;
@@ -199,6 +211,12 @@
     max-width: 1094px;
   }
 
+  .mobile-menu {
+    ul {
+      max-width: 1094px;
+    }
+  }
+
   body {
     nav {
       position: relative;
@@ -218,7 +236,6 @@
           height: 50px;
           display: flex;
           align-items: center;
-          background-color: lighten($color: $primary-color, $amount: 8);
           position: fixed;
           top: 0;
           right: 0;

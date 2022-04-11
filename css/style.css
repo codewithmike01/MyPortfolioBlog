@@ -1,5 +1,75 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.theme-1 header::before,
+.theme-1 .testimonyBg,
+.theme-1 .innerfoot {
+  background: linear-gradient(54deg, rgba(74, 76, 179, 0.9) 34%, rgba(206, 156, 156, 0.9));
+}
+.theme-1 .nav-fixed {
+  background-color: #8774cc;
+}
+.theme-1 .inner-list::before {
+  border: 2px solid #6d56c1;
+  background: #6d56c1;
+}
+.theme-1 .inner-list::after {
+  border: 1px solid #6d56c1;
+}
+.theme-1 .education-answer h4 {
+  color: #6d56c1;
+}
+.theme-1 hr {
+  color: #6d56c1;
+}
+.theme-1 .profile-intro span a {
+  color: #6d56c1;
+}
+.theme-1 button {
+  background: #6d56c1;
+}
+
+section.testimony {
+  background-color: #6d56c1;
+}
+section.testimony .quote {
+  color: #6d56c1;
+}
+
+.theme-2 header::before,
+.theme-2 .testimonyBg,
+.theme-2 .innerfoot {
+  background: linear-gradient(54deg, rgba(45, 45, 45, 0.95) 34%, rgba(45, 45, 45, 0.95));
+}
+.theme-2 .nav-fixed {
+  background-color: #5e5e5e;
+}
+.theme-2 .inner-list::before {
+  border: 2px solid #4a4a4a;
+  background: #4a4a4a;
+}
+.theme-2 .inner-list::after {
+  border: 1px solid #4a4a4a;
+}
+.theme-2 .education-answer h4 {
+  color: #4a4a4a;
+}
+.theme-2 hr {
+  color: #4a4a4a;
+}
+.theme-2 .profile-intro span a {
+  color: #4a4a4a;
+}
+.theme-2 button {
+  background: #4a4a4a;
+}
+
+section.testimony {
+  background-color: #4a4a4a;
+}
+section.testimony .quote {
+  color: #4a4a4a;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +82,7 @@ body {
   scroll-behavior: smooth;
 }
 
-section.post button, footer form button, main section.project .project-btn, main section.intro button {
+section.post button, footer form button, main section.project button, main section.intro button {
   padding: 18px;
   border-radius: 25px;
   color: #fff;
@@ -46,7 +116,6 @@ body .my-img {
   display: none;
 }
 body header::before {
-  background: linear-gradient(54deg, rgba(74, 76, 179, 0.9) 34%, rgba(206, 156, 156, 0.9));
   height: 100%;
   top: 0;
   left: 0;
@@ -136,7 +205,6 @@ body .profile-info .profile-intro {
   word-spacing: 0.4em;
 }
 body .profile-info .profile-intro span a {
-  color: #6d56c1;
   border-radius: 8px;
   padding: 5px 8px;
   background-color: #fff;
@@ -205,7 +273,6 @@ main section.intro {
   position: relative;
 }
 main section.intro button {
-  background-color: #6d56c1;
   border: none;
   width: 60%;
   margin: 30px 0 65px 5px;
@@ -244,7 +311,6 @@ main section.resume div.education .inner-list::before {
   height: 12px;
   width: 12px;
   border-radius: 25px;
-  border: 2px solid #6d56c1;
   position: relative;
   left: 0;
 }
@@ -253,7 +319,6 @@ main section.resume div.education .inner-list::after {
   display: block;
   height: 190px;
   width: 2px;
-  border: 1px solid #6d56c1;
   position: relative;
   top: -6px;
   left: 6px;
@@ -293,7 +358,6 @@ main section.resume div.education div.education-details .education-answer li {
   gap: 20px;
 }
 main section.resume div.education div.education-details .education-answer li h4 {
-  color: #6d56c1;
   font-size: 1em;
 }
 main section.resume div.education div.education-details .education-answer li .degree {
@@ -370,8 +434,7 @@ main section.project .card-project ul li {
   padding: 10px 15px;
   box-shadow: 1px 8px 21px -1px rgba(0, 0, 0, 0.34);
 }
-main section.project .project-btn {
-  background-color: #6d56c1;
+main section.project button {
   font-size: 0.9em;
   border: none;
   width: 68%;
@@ -392,7 +455,6 @@ footer {
   z-index: 1;
 }
 footer .innerfoot {
-  background: linear-gradient(54deg, rgba(74, 76, 179, 0.9) 34%, rgba(206, 156, 156, 0.9));
   height: 100%;
   position: absolute;
   top: 0;
@@ -465,7 +527,6 @@ footer form button {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  background-color: #6d56c1;
   border: none;
   font-weight: 600;
   margin: 15px auto;
@@ -482,6 +543,11 @@ footer .copyrights {
   position: fixed;
   right: 6px;
   z-index: 5;
+}
+.to-top-icon .primary-color,
+.to-top-icon .secondary-color,
+.theme-icon .primary-color,
+.theme-icon .secondary-color {
   cursor: pointer;
 }
 
@@ -548,7 +614,6 @@ section.testimony {
   margin-top: 120px;
   margin-bottom: 60px;
   padding: 15px 30px;
-  background-color: #6d56c1;
   background-image: url(.././images/testimonybg.jpg);
   background-repeat: no-repeat;
   background-position-y: 60%;
@@ -569,12 +634,10 @@ section.testimony .circle .quote {
   position: relative;
   top: 70px;
   left: 35px;
-  color: #6d56c1;
   font-size: 4em;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 section.testimony .testimonyBg {
-  background: linear-gradient(54deg, rgba(74, 76, 179, 0.9) 34%, rgba(206, 156, 156, 0.9));
   height: 100%;
   position: absolute;
   top: 0;
@@ -592,7 +655,7 @@ section.testimony .test-container {
 section.testimony .test-container hr {
   margin-top: 20px;
   margin-bottom: 20px;
-  border-color: rgba(206, 156, 156, 0.7);
+  border-color: #fff;
 }
 section.testimony .test-container ul li:nth-child(2n) {
   line-height: 30px;
@@ -758,7 +821,6 @@ section.post .post-details .post-description {
   margin-bottom: 15px;
 }
 section.post button {
-  background-color: #6d56c1;
   border: none;
   width: 50%;
   margin: 30px 0 65px 5px;
@@ -985,6 +1047,10 @@ section.post button a {
     max-width: 799px;
   }
 
+  .mobile-menu ul {
+    max-width: 799px;
+  }
+
   .skills {
     justify-content: center;
   }
@@ -1055,6 +1121,10 @@ section.post button a {
     max-width: 900px;
   }
 
+  .mobile-menu ul {
+    max-width: 900px;
+  }
+
   body .my-img {
     display: flex;
     width: 70%;
@@ -1092,6 +1162,10 @@ section.post button a {
     max-width: 1094px;
   }
 
+  .mobile-menu ul {
+    max-width: 1094px;
+  }
+
   body nav {
     position: relative;
     padding-top: 35px;
@@ -1110,7 +1184,6 @@ section.post button a {
     height: 50px;
     display: flex;
     align-items: center;
-    background-color: #8774cc;
     position: fixed;
     top: 0;
     right: 0;
