@@ -35,6 +35,13 @@ section.testimony .quote {
   color: #6d56c1;
 }
 
+.pop-container .pop-details-container .cancel-pop {
+  color: #6d56c1;
+}
+.pop-container .pop-details-container h4 {
+  color: #6d56c1;
+}
+
 .theme-2 header::before,
 .theme-2 .testimonyBg,
 .theme-2 .innerfoot {
@@ -70,6 +77,13 @@ section.testimony .quote {
   color: #4a4a4a;
 }
 
+.pop-container .pop-details-container .cancel-pop {
+  color: #4a4a4a;
+}
+.pop-container .pop-details-container h4 {
+  color: #4a4a4a;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -99,7 +113,7 @@ body p {
   line-height: 32px;
 }
 body header {
-  margin-bottom: 120px;
+  margin-bottom: 10px;
   position: relative;
   width: 100%;
   height: 600px;
@@ -410,6 +424,10 @@ main section.project .card-project h4 {
 main section.project .card-project img {
   width: 100%;
   object-fit: cover;
+}
+main section.project .card-project img:hover {
+  transform: scale(1.17);
+  transition: transform 1s ease-in-out;
 }
 main section.project .card-project .project-details {
   padding: 0 0.7em;
@@ -938,7 +956,6 @@ section.post button a {
   padding-bottom: 30px;
   border-radius: 8px;
   background-color: #fff;
-  color: #6d56c1;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -970,7 +987,6 @@ section.post button a {
   justify-content: center;
 }
 .pop-container .pop-details-container .button-container button {
-  background-color: #6d56c1;
   color: #fff;
   padding: 10px 15px;
   border-radius: 8px;
@@ -1166,6 +1182,9 @@ section.post button a {
     max-width: 1094px;
   }
 
+  body header {
+    margin-bottom: 60px;
+  }
   body nav {
     position: relative;
     padding-top: 35px;

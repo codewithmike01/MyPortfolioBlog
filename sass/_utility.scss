@@ -56,6 +56,16 @@ $paragraph-font: 'Roboto', sans-serif;
       color: $main-color;
     }
   }
+  .pop-container {
+    .pop-details-container {
+      .cancel-pop {
+        color: $main-color;
+      }
+      h4 {
+        color: $main-color;
+      }
+    }
+  }
 }
 
 @include theme_switch(
