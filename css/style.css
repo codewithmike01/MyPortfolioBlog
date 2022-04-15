@@ -5,9 +5,6 @@
 .theme-1 .innerfoot {
   background: linear-gradient(54deg, rgba(74, 76, 179, 0.9) 34%, rgba(206, 156, 156, 0.9));
 }
-.theme-1 .nav-fixed {
-  background-color: #8774cc;
-}
 .theme-1 .inner-list::before {
   border: 2px solid #6d56c1;
   background: #6d56c1;
@@ -46,9 +43,6 @@ section.testimony .quote {
 .theme-2 .testimonyBg,
 .theme-2 .innerfoot {
   background: linear-gradient(54deg, rgba(45, 45, 45, 0.95) 34%, rgba(45, 45, 45, 0.95));
-}
-.theme-2 .nav-fixed {
-  background-color: #5e5e5e;
 }
 .theme-2 .inner-list::before {
   border: 2px solid #4a4a4a;
@@ -157,6 +151,7 @@ body nav .hide {
   display: none;
 }
 body nav .mobile-menu {
+  z-index: 200;
   padding-top: 45px;
   padding-left: 30px;
   height: 100vh;
@@ -560,7 +555,7 @@ footer .copyrights {
 .theme-icon {
   position: fixed;
   right: 6px;
-  z-index: 5;
+  z-index: 3;
 }
 .to-top-icon .primary-color,
 .to-top-icon .secondary-color,

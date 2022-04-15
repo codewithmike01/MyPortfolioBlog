@@ -14,9 +14,6 @@ $paragraph-font: 'Roboto', sans-serif;
     .innerfoot {
       background: $linear-color;
     }
-    .nav-fixed {
-      background-color: lighten($color: $main-color, $amount: 8);
-    }
 
     .inner-list::before {
       border: 2px solid $main-color;
