@@ -29,6 +29,11 @@ $paragraph-font: 'Roboto', sans-serif;
         color: $main-color;
       }
     }
+    @media (min-width: 992px) {
+      .nav-fixed {
+        background-color: $main-color;
+      }
+    }
 
     hr {
       color: $main-color;

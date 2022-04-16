@@ -15,6 +15,11 @@
 .theme-1 .education-answer h4 {
   color: #6d56c1;
 }
+@media (min-width: 992px) {
+  .theme-1 .nav-fixed {
+    background-color: #6d56c1;
+  }
+}
 .theme-1 hr {
   color: #6d56c1;
 }
@@ -53,6 +58,11 @@ section.testimony .quote {
 }
 .theme-2 .education-answer h4 {
   color: #4a4a4a;
+}
+@media (min-width: 992px) {
+  .theme-2 .nav-fixed {
+    background-color: #4a4a4a;
+  }
 }
 .theme-2 hr {
   color: #4a4a4a;
@@ -151,7 +161,6 @@ body nav .hide {
   display: none;
 }
 body nav .mobile-menu {
-  z-index: 200;
   padding-top: 45px;
   padding-left: 30px;
   height: 100vh;
@@ -160,6 +169,7 @@ body nav .mobile-menu {
   top: 0;
   right: 0;
   bottom: 0;
+  z-index: 200;
   left: 0;
   background-color: rgba(0, 0, 0, 0.9);
 }

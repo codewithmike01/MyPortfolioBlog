@@ -54,7 +54,6 @@ body {
       display: none;
     }
     .mobile-menu {
-      z-index: 200;
       padding-top: 45px;
       padding-left: 30px;
       height: 100vh;
@@ -63,6 +62,7 @@ body {
       top: 0;
       right: 0;
       bottom: 0;
+      z-index: 200;
       left: 0;
       background-color: rgba(0, 0, 0, 0.9);
 
