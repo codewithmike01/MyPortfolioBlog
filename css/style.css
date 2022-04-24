@@ -851,6 +851,7 @@ section.post button {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.2em;
 }
 section.post button a {
   color: #fff;
@@ -858,7 +859,6 @@ section.post button a {
   align-items: center;
   text-align: center;
   gap: 7px;
-  font-size: 1.2em;
 }
 
 .h2-animate {
