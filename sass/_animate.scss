@@ -84,3 +84,17 @@
     transform: scale(1, 1);
   }
 }
+
+.pop-details-container {
+  animation: popIn 1s ease-in-out;
+}
+
+@keyframes popIn {
+  from {
+    transform: rotate(180deg) scale(0.3);
+  }
+
+  to {
+    transform: rotate() scale(1);
+  }
+}

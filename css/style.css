@@ -1,5 +1,93 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.theme-1 header::before,
+.theme-1 .testimonyBg,
+.theme-1 .innerfoot {
+  background: linear-gradient(54deg, rgba(74, 76, 179, 0.9) 34%, rgba(206, 156, 156, 0.9));
+}
+.theme-1 .inner-list::before {
+  border: 2px solid #6d56c1;
+  background: #6d56c1;
+}
+.theme-1 .inner-list::after {
+  border: 1px solid #6d56c1;
+}
+.theme-1 .education-answer h4 {
+  color: #6d56c1;
+}
+@media (min-width: 992px) {
+  .theme-1 .nav-fixed {
+    background-color: #6d56c1;
+  }
+}
+.theme-1 hr {
+  color: #6d56c1;
+}
+.theme-1 .profile-intro span a {
+  color: #6d56c1;
+}
+.theme-1 button {
+  background: #6d56c1;
+}
+
+section.testimony {
+  background-color: #6d56c1;
+}
+section.testimony .quote {
+  color: #6d56c1;
+}
+
+.pop-container .pop-details-container .cancel-pop {
+  color: #6d56c1;
+}
+.pop-container .pop-details-container h4 {
+  color: #6d56c1;
+}
+
+.theme-2 header::before,
+.theme-2 .testimonyBg,
+.theme-2 .innerfoot {
+  background: linear-gradient(54deg, rgba(45, 45, 45, 0.95) 34%, rgba(45, 45, 45, 0.95));
+}
+.theme-2 .inner-list::before {
+  border: 2px solid #4a4a4a;
+  background: #4a4a4a;
+}
+.theme-2 .inner-list::after {
+  border: 1px solid #4a4a4a;
+}
+.theme-2 .education-answer h4 {
+  color: #4a4a4a;
+}
+@media (min-width: 992px) {
+  .theme-2 .nav-fixed {
+    background-color: #4a4a4a;
+  }
+}
+.theme-2 hr {
+  color: #4a4a4a;
+}
+.theme-2 .profile-intro span a {
+  color: #4a4a4a;
+}
+.theme-2 button {
+  background: #4a4a4a;
+}
+
+section.testimony {
+  background-color: #4a4a4a;
+}
+section.testimony .quote {
+  color: #4a4a4a;
+}
+
+.pop-container .pop-details-container .cancel-pop {
+  color: #4a4a4a;
+}
+.pop-container .pop-details-container h4 {
+  color: #4a4a4a;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +100,7 @@ body {
   scroll-behavior: smooth;
 }
 
-section.post button, footer form button, main section.project .project-btn, main section.intro button {
+section.post button, footer form button, main section.project button, main section.intro button {
   padding: 18px;
   border-radius: 25px;
   color: #fff;
@@ -29,7 +117,7 @@ body p {
   line-height: 32px;
 }
 body header {
-  margin-bottom: 120px;
+  margin-bottom: 10px;
   position: relative;
   width: 100%;
   height: 600px;
@@ -46,7 +134,6 @@ body .my-img {
   display: none;
 }
 body header::before {
-  background: linear-gradient(54deg, rgba(74, 76, 179, 0.9) 34%, rgba(206, 156, 156, 0.9));
   height: 100%;
   top: 0;
   left: 0;
@@ -82,6 +169,7 @@ body nav .mobile-menu {
   top: 0;
   right: 0;
   bottom: 0;
+  z-index: 200;
   left: 0;
   background-color: rgba(0, 0, 0, 0.9);
 }
@@ -136,7 +224,9 @@ body .profile-info .profile-intro {
   word-spacing: 0.4em;
 }
 body .profile-info .profile-intro span a {
-  color: #fff;
+  border-radius: 8px;
+  padding: 5px 8px;
+  background-color: #fff;
 }
 body .profile-info ul {
   display: flex;
@@ -159,6 +249,7 @@ body .profile-socials img {
   width: 47px;
   height: 47px;
   opacity: 0.7;
+  filter: invert(75%);
 }
 body .profile-socials .linkedIn,
 body .profile-socials .facebook {
@@ -170,7 +261,7 @@ body a {
 }
 
 main {
-  padding: 0 12px;
+  padding: 70px 12px;
   padding-bottom: 50px;
 }
 main h2,
@@ -201,7 +292,6 @@ main section.intro {
   position: relative;
 }
 main section.intro button {
-  background-color: #6d56c1;
   border: none;
   width: 60%;
   margin: 30px 0 65px 5px;
@@ -240,7 +330,6 @@ main section.resume div.education .inner-list::before {
   height: 12px;
   width: 12px;
   border-radius: 25px;
-  border: 2px solid #6d56c1;
   position: relative;
   left: 0;
 }
@@ -249,7 +338,6 @@ main section.resume div.education .inner-list::after {
   display: block;
   height: 190px;
   width: 2px;
-  border: 1px solid #6d56c1;
   position: relative;
   top: -6px;
   left: 6px;
@@ -289,7 +377,6 @@ main section.resume div.education div.education-details .education-answer li {
   gap: 20px;
 }
 main section.resume div.education div.education-details .education-answer li h4 {
-  color: #6d56c1;
   font-size: 1em;
 }
 main section.resume div.education div.education-details .education-answer li .degree {
@@ -343,6 +430,10 @@ main section.project .card-project img {
   width: 100%;
   object-fit: cover;
 }
+main section.project .card-project img:hover {
+  transform: scale(1.17);
+  transition: transform 1s ease-in-out;
+}
 main section.project .card-project .project-details {
   padding: 0 0.7em;
 }
@@ -366,8 +457,7 @@ main section.project .card-project ul li {
   padding: 10px 15px;
   box-shadow: 1px 8px 21px -1px rgba(0, 0, 0, 0.34);
 }
-main section.project .project-btn {
-  background-color: #6d56c1;
+main section.project button {
   font-size: 0.9em;
   border: none;
   width: 68%;
@@ -388,7 +478,6 @@ footer {
   z-index: 1;
 }
 footer .innerfoot {
-  background: linear-gradient(54deg, rgba(74, 76, 179, 0.9) 34%, rgba(206, 156, 156, 0.9));
   height: 100%;
   position: absolute;
   top: 0;
@@ -461,7 +550,6 @@ footer form button {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
-  background-color: #6d56c1;
   border: none;
   font-weight: 600;
   margin: 15px auto;
@@ -477,7 +565,12 @@ footer .copyrights {
 .theme-icon {
   position: fixed;
   right: 6px;
-  z-index: 5;
+  z-index: 3;
+}
+.to-top-icon .primary-color,
+.to-top-icon .secondary-color,
+.theme-icon .primary-color,
+.theme-icon .secondary-color {
   cursor: pointer;
 }
 
@@ -544,7 +637,6 @@ section.testimony {
   margin-top: 120px;
   margin-bottom: 60px;
   padding: 15px 30px;
-  background-color: #6d56c1;
   background-image: url(.././images/testimonybg.jpg);
   background-repeat: no-repeat;
   background-position-y: 60%;
@@ -565,12 +657,10 @@ section.testimony .circle .quote {
   position: relative;
   top: 70px;
   left: 35px;
-  color: #6d56c1;
   font-size: 4em;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 section.testimony .testimonyBg {
-  background: linear-gradient(54deg, rgba(74, 76, 179, 0.9) 34%, rgba(206, 156, 156, 0.9));
   height: 100%;
   position: absolute;
   top: 0;
@@ -588,7 +678,7 @@ section.testimony .test-container {
 section.testimony .test-container hr {
   margin-top: 20px;
   margin-bottom: 20px;
-  border-color: rgba(206, 156, 156, 0.7);
+  border-color: #fff;
 }
 section.testimony .test-container ul li:nth-child(2n) {
   line-height: 30px;
@@ -754,7 +844,6 @@ section.post .post-details .post-description {
   margin-bottom: 15px;
 }
 section.post button {
-  background-color: #6d56c1;
   border: none;
   width: 50%;
   margin: 30px 0 65px 5px;
@@ -762,6 +851,7 @@ section.post button {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.2em;
 }
 section.post button a {
   color: #fff;
@@ -769,7 +859,6 @@ section.post button a {
   align-items: center;
   text-align: center;
   gap: 7px;
-  font-size: 1.2em;
 }
 
 .h2-animate {
@@ -841,6 +930,82 @@ section.post button a {
     transform: scale(1, 1);
   }
 }
+.pop-details-container {
+  animation: popIn 1s ease-in-out;
+}
+
+@keyframes popIn {
+  from {
+    transform: rotate(180deg) scale(0.3);
+  }
+  to {
+    transform: rotate() scale(1);
+  }
+}
+.pop-is-hide {
+  display: none;
+  transition: display 3s ease-in;
+}
+
+.pop-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 6;
+}
+.pop-container .pop-details-container {
+  padding: 0 10px;
+  padding-bottom: 30px;
+  border-radius: 8px;
+  background-color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 1024px;
+}
+.pop-container .pop-details-container .cancel-pop {
+  position: relative;
+  left: 93%;
+  font-size: 1.9em;
+  cursor: pointer;
+}
+.pop-container .pop-details-container h4 {
+  padding: 10px 0;
+  word-break: break-all;
+  text-align: center;
+  text-transform: uppercase;
+}
+.pop-container .pop-details-container .button-container {
+  position: relative;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  justify-content: center;
+}
+.pop-container .pop-details-container .button-container button {
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 3px 1px gray;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 1s ease-in-out;
+}
+.pop-container .pop-details-container .button-container button:hover {
+  transform: scale(1.1);
+}
+
 /* SMALL MOBILE*/
 @media (min-width: 399px) {
   section.testimony .circle {
@@ -903,17 +1068,28 @@ section.post button a {
     max-width: 799px;
   }
 
+  .mobile-menu ul {
+    max-width: 799px;
+  }
+
   .skills {
     justify-content: center;
   }
 
   .card-project {
     display: flex;
-    gap: 20px;
+    gap: 10px;
+  }
+  .card-project .project-details {
+    width: 100%;
+  }
+  .card-project .image-project {
+    width: 60%;
+    display: flex;
+    align-items: center;
   }
   .card-project img {
-    width: 100%;
-    height: 100%;
+    height: 70%;
     object-fit: cover;
   }
 
@@ -966,6 +1142,10 @@ section.post button a {
     max-width: 900px;
   }
 
+  .mobile-menu ul {
+    max-width: 900px;
+  }
+
   body .my-img {
     display: flex;
     width: 70%;
@@ -1003,6 +1183,13 @@ section.post button a {
     max-width: 1094px;
   }
 
+  .mobile-menu ul {
+    max-width: 1094px;
+  }
+
+  body header {
+    margin-bottom: 60px;
+  }
   body nav {
     position: relative;
     padding-top: 35px;
@@ -1021,7 +1208,6 @@ section.post button a {
     height: 50px;
     display: flex;
     align-items: center;
-    background-color: #8774cc;
     position: fixed;
     top: 0;
     right: 0;

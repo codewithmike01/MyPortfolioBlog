@@ -4,6 +4,8 @@ const skills = [
   { name: 'HTML5', imageUrl: './images/html5Skill.png" ' },
   { name: 'CSS3', imageUrl: './images/css3Skill.png" ' },
   { name: 'JAVASCRIPT', imageUrl: './images/jsSkill.png" ' },
+  { name: 'REACT', imageUrl: './images/reactSkill.png" ' },
+  { name: 'REDUX', imageUrl: './images/reduxSkill.png" ' },
   { name: 'JEST', imageUrl: './images/jestSkill.png ' },
   { name: 'WEBPACK', imageUrl: './images/webpackSkill.png" ' },
   { name: 'SASS', imageUrl: './images/sassSkill.png" ' },

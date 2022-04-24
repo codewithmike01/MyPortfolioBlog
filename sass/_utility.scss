@@ -1,16 +1,85 @@
-$primary-text-color: #555;
 $secondary-color: #4a4a4a;
+$primary-text-color: #555;
 $primary-color: #6d56c1;
-$font-change: hsl(210, 11%, 15%);
 $word-space: 0.4em;
 $line-height: 37px;
 $padding-content-x: 12px;
 $default-font: 'Roboto Mono', monospace;
 $paragraph-font: 'Roboto', sans-serif;
-$linear-background: linear-gradient(
-  54deg,
-  rgba(74, 76, 179, 0.9) 34%,
-  hsla(0, 34%, 71%, 0.9)
+
+@mixin theme_switch($theme-name, $main-color, $linear-color) {
+  .#{$theme-name} {
+    header::before,
+    .testimonyBg,
+    .innerfoot {
+      background: $linear-color;
+    }
+
+    .inner-list::before {
+      border: 2px solid $main-color;
+      background: $main-color;
+    }
+
+    .inner-list::after {
+      border: 1px solid $main-color;
+    }
+
+    .education-answer {
+      h4 {
+        color: $main-color;
+      }
+    }
+    @media (min-width: 992px) {
+      .nav-fixed {
+        background-color: $main-color;
+      }
+    }
+
+    hr {
+      color: $main-color;
+    }
+
+    .profile-intro {
+      span {
+        a {
+          color: $main-color;
+        }
+      }
+    }
+
+    button {
+      background: $main-color;
+    }
+  }
+
+  section.testimony {
+    background-color: $main-color;
+    .quote {
+      color: $main-color;
+    }
+  }
+  .pop-container {
+    .pop-details-container {
+      .cancel-pop {
+        color: $main-color;
+      }
+      h4 {
+        color: $main-color;
+      }
+    }
+  }
+}
+
+@include theme_switch(
+  theme-1,
+  #6d56c1,
+  linear-gradient(54deg, rgba(74, 76, 179, 0.9) 34%, hsla(0, 34%, 71%, 0.9))
+);
+
+@include theme_switch(
+  theme-2,
+  #4a4a4a,
+  linear-gradient(54deg, rgba(45, 45, 45, 0.95) 34%, rgba(45, 45, 45, 0.95))
 );
 
 * {
