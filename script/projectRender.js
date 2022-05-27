@@ -11,14 +11,32 @@ const project = [
     stack: ['REACT', 'REDUX', 'JEST', 'RENDERER'],
     id: 1,
   },
+  {
+    title: 'BUDGET-MK MOBILE APP',
+    imageUrl: './images/budget_app.png',
+    summary: `In this project, I created a budget calculator website, which has categories of 
+    budgets in which you can enter transaction costs for each sub-group in other to get the 
+    total budget price in that particular budget category.<br/>
+    - I worked with Rails7, allowing user authentication and authorization.<br/>
+    - I did testing on the app using Rspec, on feature, model and request testing, performing both unit and integration test.<br>
+    - I worked on eliminating n + 1 query, using egar loading.`,
+    stack: ['Ruby', 'Rails', 'Css'],
+    id: 2,
+  },
 ];
 
 const projectDetails = [
   {
     id: 1,
     title: 'AIR POLLUTION TRACKING MOBILE APP',
-    videoLink: 'https://youtu.be/zCGXkCrBBEQ',
+    videoLink: 'https://youtu.be/C22HVb9Cna8',
     liveLink: 'https://github.com/Ginohmk/track-air-polluton-app.git',
+  },
+  {
+    id: 2,
+    title: 'BUDGET-MK MOBILE APP',
+    videoLink: 'https://youtu.be/C22HVb9Cna8',
+    liveLink: 'https://github.com/Ginohmk/budgeter_mk.git',
   },
 ];
 
