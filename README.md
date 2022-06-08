@@ -33,7 +33,7 @@ run `npm install` to install the dependencies
 
 - GitHub: [@Ginohmk](https://github.com/Ginohmk)
 - Twitter: [@michotall95](https://www.twitter.com/michotall95)
-- LinkedIn: [@kanumike](https://www.linkedin.com/in/kanu-mike-497119211/)
+- LinkedIn: [@kanumike](https://www.linkedin.com/in/mike-kanu-dev/)
 - Instagram: [@savy_kanu_mike](https/instagram.com/savy_kanu_mike)
 - Facebook: [@mike.kanu](https://www.facebook.com/mike.kanu)
 
