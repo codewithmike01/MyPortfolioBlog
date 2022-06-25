@@ -987,6 +987,7 @@ section.post button a {
   transform: translate(-50%, 0%);
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   padding-top: 20px;
   justify-content: center;
@@ -1007,7 +1008,7 @@ section.post button a {
 }
 
 /* SMALL MOBILE*/
-@media (min-width: 399px) {
+@media (min-width: 374px) {
   section.testimony .circle {
     left: 14%;
   }

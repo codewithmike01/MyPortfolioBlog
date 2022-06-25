@@ -6,10 +6,13 @@ const skills = [
   { name: 'JAVASCRIPT', imageUrl: './images/jsSkill.png" ' },
   { name: 'REACT', imageUrl: './images/reactSkill.png" ' },
   { name: 'REDUX', imageUrl: './images/reduxSkill.png" ' },
-  { name: 'JEST', imageUrl: './images/jestSkill.png ' },
-  { name: 'WEBPACK', imageUrl: './images/webpackSkill.png" ' },
   { name: 'SASS', imageUrl: './images/sassSkill.png" ' },
   { name: 'BOOTSTRAP', imageUrl: './images/bootstrapSkill.png" ' },
+  { name: 'RUBY', imageUrl: './images/rubySkill.png" ' },
+  { name: 'RUBY ON RAILS', imageUrl: './images/railsSkill.png" ' },
+  { name: 'POSTGRESQL', imageUrl: './images/postgresqlSkill.png" ' },
+  { name: 'JEST', imageUrl: './images/jestSkill.png ' },
+  { name: 'WEBPACK', imageUrl: './images/webpackSkill.png" ' },
   { name: 'PHOTOSHOP', imageUrl: './images/photoshopSkill.png" ' },
 ];
 

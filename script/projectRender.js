@@ -8,7 +8,7 @@ const project = [
     - This project is a capstone project for Microverse remote school.<br/>
     - I worked with two APIs, which are the Rest country API and the Air pollution API.<br/>
     - I did testing on the app using react testing library, jest, and renderer for snapshots.`,
-    stack: ['REACT', 'REDUX', 'JEST', 'RENDERER'],
+    stack: ['React', 'Redux', 'Jest', 'Heroku'],
     id: 1,
   },
   {
@@ -20,7 +20,7 @@ const project = [
     - I worked with Rails7, allowing user authentication and authorization.<br/>
     - I did testing on the app using Rspec, on feature, model and request testing, performing both unit and integration test.<br>
     - I worked on eliminating n + 1 query, using egar loading.`,
-    stack: ['Ruby', 'Rails', 'Css'],
+    stack: ['Ruby', 'Rails', 'Css', 'Heroku'],
     id: 2,
   },
 ];
@@ -30,13 +30,15 @@ const projectDetails = [
     id: 1,
     title: 'AIR POLLUTION TRACKING MOBILE APP',
     videoLink: 'https://youtu.be/C22HVb9Cna8',
-    liveLink: 'https://github.com/Ginohmk/track-air-polluton-app.git',
+    codeLink: 'https://github.com/Ginohmk/track-air-polluton-app.git',
+    liveLink: 'https://air-pollution-tracker.herokuapp.com/',
   },
   {
     id: 2,
     title: 'BUDGET-MK MOBILE APP',
     videoLink: 'https://youtu.be/C22HVb9Cna8',
-    liveLink: 'https://github.com/Ginohmk/budgeter_mk.git',
+    codeLink: 'https://github.com/Ginohmk/budgeter_mk.git',
+    liveLink: 'https://blooming-depths-30594.herokuapp.com/',
   },
 ];
 
@@ -84,9 +86,12 @@ const renderPopup = (id) => {
           <a href="${item.videoLink}" target="_blank">
             <button>See video explanation</button>
           </a>
-          <a href="${item.liveLink}" target="_blank">
+          <a href="${item.codeLink}" target="_blank">
             <button>See code base</button>
           </a>
+          <a href="${item.liveLink}" target="_blank">
+          <button>View on broswer</button>
+        </a>
         </div>`;
 
       projectPopContainer.innerHTML = popHtml;

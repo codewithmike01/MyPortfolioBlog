@@ -1,12 +1,22 @@
 // MEADIA QUERY
 
 /* SMALL MOBILE*/
-@media (min-width: 399px) {
+@media (min-width: 374px) {
   section.testimony {
     .circle {
       left: 14%;
     }
   }
+
+  // .pop-container {
+  //   .pop-details-container {
+  //     .button-container {
+  //       flex-direction: column;
+  //       align-items: center;
+  //       justify-content: center;
+  //     }
+  //   }
+  // }
 }
 
 /* MOBILE*/
