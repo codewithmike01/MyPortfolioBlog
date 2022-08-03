@@ -215,7 +215,7 @@ body .profile .name-job p {
   font-size: 0.9em;
 }
 body .profile-info {
-  margin-top: 25px;
+  margin-top: 10px;
   display: flex;
   gap: 5px;
 }
@@ -223,7 +223,11 @@ body .profile-info .profile-intro {
   line-height: 35px;
   word-spacing: 0.4em;
 }
-body .profile-info .profile-intro span a {
+body .profile-info .profile-intro .know-more {
+  display: block;
+  margin-top: 20px;
+}
+body .profile-info .profile-intro .know-more a {
   border-radius: 8px;
   padding: 5px 8px;
   background-color: #fff;

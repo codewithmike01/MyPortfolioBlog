@@ -1,7 +1,10 @@
 # MyPortfolioBlog 💻
 
 This is my personal portfolio Website, which is a work in progress. <br > <br > <br >
-![portfolio](https://user-images.githubusercontent.com/58771507/154757247-7474e5eb-216e-4307-b8cd-181a0a9cf0a8.PNG)
+![Light-MOde](https://user-images.githubusercontent.com/58771507/182553319-cb0b1d35-f2d0-4bc9-9219-5bb279070354.png)
+<br > <br > <br >
+![Dark-Mode](https://user-images.githubusercontent.com/58771507/182553787-2520aed9-bb2a-4e15-a0a2-e00489158513.png)
+
 <br > <br >
 
 ## Live Preview
