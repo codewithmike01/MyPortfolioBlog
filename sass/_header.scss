@@ -116,7 +116,7 @@ body {
   }
 
   .profile-info {
-    margin-top: 25px;
+    margin-top: 10px;
     display: flex;
     gap: 5px;
 
@@ -124,7 +124,9 @@ body {
       line-height: 35px;
       word-spacing: $word-space;
 
-      span {
+      .know-more {
+        display: block;
+        margin-top: 20px;
         a {
           border-radius: 8px;
           padding: 5px 8px;
